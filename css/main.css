@@ -121,6 +121,10 @@ html {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+	margin: 0;
+}
+
 a {
 	text-decoration: none;
 }
@@ -188,16 +192,16 @@ section {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b0303', endColorstr='#cf0506',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
 }
 
+
+
 .choice {
 	float: left;
-	height: 540px;
-	margin-left: 134px;
-	width: 33%;
-	
+	position: relative;
+
 	-webkit-box-shadow: 5px 5px 13px rgba(50, 50, 50, 0.75);
 	-moz-box-shadow:    5px 5px 13px rgba(50, 50, 50, 0.75);
 	box-shadow:         5px 5px 13px rgba(50, 50, 50, 0.75);
-	
+
 	background: #edeeee; /* Old browsers */
 
 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -218,8 +222,29 @@ section {
 
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edeeee', endColorstr='#9d9b9b',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
 
-	
 }
+
+
+
+@media only screen and (min-width: 768px) {
+	.choice {
+		height: 540px;
+		margin-left: 96px;
+		width: 200px;
+		/*width: 35%;*/
+	}
+}
+
+@media only screen and (min-width: 1024px) {	
+	.choice {
+		height: 540px;
+		margin-left: 96px;
+		width: 337px;
+	}
+}
+
+
+
 
 .choice img {
 	margin-left: -30px;
@@ -230,12 +255,6 @@ section {
         -ms-transform: rotate(10deg);  /* IE 9 */
          -o-transform: rotate(10deg);  /* Opera 10.50-12.00 */
             transform: rotate(10deg);  /* Firefox 16+, IE 10+, Opera 12.10+ */
-}
-
-
-h2,
-.its {
-
 }
 
 .its {
@@ -296,6 +315,17 @@ section h4 {
 	margin-left: 30px;
 }
 
+.or {
+	color: #fff;
+  	display: block;
+  	font-size: 52px;
+  	position: absolute;
+  	right: -32px;
+	text-shadow: 2px 2px 0px rgba(34, 31, 31, 1);
+  	top: 16%;
+	z-index: 10;
+}
+
 
 ul.entry-info {
 	color: #fff;
@@ -338,26 +368,90 @@ footer h2 {
 
 
 
-/* Generic */
 
 
-.rotate {
-	float: left;
-	margin-top: -56px;
-	width: 100%;
+@media only screen and (min-width: 767px) {
+	.rotate {
+		float: left;
+		margin-top: 46px;
+		/*width: 100%;*/
 	
-    -webkit-transform: rotate(-10deg);  /* Chrome, Safari 3.1+ */
-       -moz-transform: rotate(-10deg);  /* Firefox 3.5-15 */
-        -ms-transform: rotate(-10deg);  /* IE 9 */
-         -o-transform: rotate(-10deg);  /* Opera 10.50-12.00 */
-            transform: rotate(-10deg);  /* Firefox 16+, IE 10+, Opera 12.10+ */
+	    -webkit-transform: rotate(350deg);  /* Chrome, Safari 3.1+ */
+	       -moz-transform: rotate(350deg);  /* Firefox 3.5-15 */
+	        -ms-transform: rotate(350deg);  /* IE 9 */
+	         -o-transform: rotate(350deg);  /* Opera 10.50-12.00 */
+	            transform: rotate(350deg);  /* Firefox 16+, IE 10+, Opera 12.10+ */
+			
+				transform-origin: top left;  
+	}
 }
 
 
 
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
 
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
 
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
 
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
 
 
 
