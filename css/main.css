@@ -157,6 +157,8 @@ a {
 
 a.link-purchase {
 	background-color: #ffca04;
+	float: right;
+	margin-top: -77px;
 }
 
 a.link-more_toyota {
@@ -405,6 +407,13 @@ ul.entry-info {
 
 ul.entry-info li {
 	float: left;
+	list-style: inside;
+	padding: 0 20px 20px 0;
+}
+
+ul.entry-info a {
+	color: #fff;
+	text-decoration: underline;
 }
 
 
@@ -447,7 +456,7 @@ ul.entry-info li {
 	h2 .vehicle-name {
 		font-size: 32px;
 		margin-top: -30px;
-		text-shadow: -3px 4px 0 #FFFFFF;
+		text-shadow: -1px 2px 0 #FFFFFF;
 	}
 	
 	section h3 {
@@ -464,7 +473,7 @@ ul.entry-info li {
 	section h4 {
 	  font-size: 38px;
 	  margin: 0;
-	  padding: 42px 0 0 0;
+	  /*padding: 42px 0 0 0;*/
 	  text-shadow: 4px 4px 0 #221F1F;
 	}
 
@@ -502,7 +511,7 @@ ul.entry-info li {
 	h2 .vehicle-name {
 		font-size: 37px;
 		/*margin: -25px 0 0 50px;*/
-		text-shadow: -3px 4px 0 #FFFFFF;
+		/*text-shadow: -3px 4px 0 #FFFFFF;*/
 	}
 }
 
@@ -564,6 +573,12 @@ footer h2 {
 
 
 /* Pages */
+
+/* Landing */
+
+.landing-page {
+	
+}
 
 /* Thank You */
 
