@@ -26,14 +26,14 @@
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
 
-    <body class="thankyou">
+    <body class="landing-page">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
         
 		<header>
-			<h1>Unibond xx</h1>
+			<h1>Unibond</h1>
 		</header>
 		
 		<div id="wrap">
@@ -48,7 +48,9 @@
 								<span class="vehicle-name">a Toyota Proace</span>
 							</h2>
 					
-							<img  class="vehicle" src="img/van.png" alt="">
+							<img class="vehicle" src="img/van.png" alt="">
+		
+							<h3>Click to Enter</h3>
 							
 							<span class="or">or</span>
 						</div>
@@ -66,46 +68,33 @@
 							<img class="vehicle" src="img/hilux.png" alt="">
 							
 							<img class="toyota-logo" src="img/logo_toyota.png" alt="">
-							
 					
+							<h3>Click to Enter</h3>
 						</div>
 					</a>
 				</div>
-				
-				<h2 class="thankyou-header">Thank You for Your Entry</h2>
 			
-				<nav class="page-nav">
-					<a class="link-more_toyota" href="">MORE ABOUT THE
-	TOYOTA HILUX &amp; PROACE</a>
+			<nav class="page-nav">
+				<a class="link-purchase" href="http://www.screwfix.com/search.do?fh_search=unibond+loctite+nitromors+solvite&fh_start_index=0&fh_sort_by=&fh_view_size=100&fhSearchParams=&customPrice=&priceFrom=&priceTo=&priceFilterOn=">Purchase Qualifying Products</a>
+			</nav>
+			
+			
+			<h4>Two Big Prizes to be Won with Unibond at Screwfix</h4>
+			
+			<ul class="entry-info">
+				<li>Buy any Loctite, Nitromors, Solvite or UniBond product in <a href="">Screwfix</a></li>
+			
+				<li>Choose which vehicle you’d like a chance of winning</li>
+			</ul>
+			
 
-					<a class="link-download" href="">DOWNLOAD A UNIBOND CATALOGUE</a>
-			
-					<a class="link-more_unibond" href="">MORE ABOUT UNIBOND</a>
-			
-					<a class="link-screwfix" href="">FIND YOUR LOCAL SCREWFIX STORE</a>
-
-				</nav>
-			
-
-			</section>
+		</section>
 		</div>
 		
 		
-		<footer>
-			<h2>Unibond</h2>
-			
-			<div class="footer-inner">
-				<h3>The Professionals Choice</h3>
-			
-				<nav>
-					<a href="">Terms &amp; Conditions of Entry</a>
-					<a href="">Terms of Use</a>
-					<a href="">Privacy</a>
-				</nav>
-			</div>
-		</footer>
+
 		
-		
+		<?php include 'includes/footer.php'; ?>
 
 		
 		

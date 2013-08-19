@@ -33,7 +33,7 @@
 
         
 		<header>
-			<h1>Unibond xx</h1>
+			<h1>Unibond</h1>
 		</header>
 		
 		<div id="wrap">
@@ -78,11 +78,17 @@
 					<a class="link-more_toyota" href="">MORE ABOUT THE
 	TOYOTA HILUX &amp; PROACE</a>
 
-					<a class="link-download" href="">DOWNLOAD A UNIBOND CATALOGUE</a>
+					<a class="link-download" href="">
+						DOWNLOAD A <br />UNIBOND CATALOGUE
+						<img class="icon" src="img/icon_pdf.png">
+					</a>
 			
 					<a class="link-more_unibond" href="">MORE ABOUT UNIBOND</a>
 			
-					<a class="link-screwfix" href="">FIND YOUR LOCAL SCREWFIX STORE</a>
+					<a class="link-screwfix" href="">
+						FIND YOUR LOCAL SCREWFIX STORE
+						<img class="icon" src="img/icon_uk.png">
+					</a>
 
 				</nav>
 			
@@ -91,19 +97,7 @@
 		</div>
 		
 		
-		<footer>
-			<h2>Unibond</h2>
-			
-			<div class="footer-inner">
-				<h3>The Professionals Choice</h3>
-			
-				<nav>
-					<a href="">Terms &amp; Conditions of Entry</a>
-					<a href="">Terms of Use</a>
-					<a href="">Privacy</a>
-				</nav>
-			</div>
-		</footer>
+		<?php include 'includes/footer.php'; ?>
 		
 		
 
