@@ -888,6 +888,27 @@ footer nav a {
 }
 
 
+/* Closed */
+
+.closed-banner h3 {
+  	background-color: #ED1C24;
+  	font-size: 72px;
+  	height: 100px;
+  	left: 86px;
+  	position: absolute;
+  	text-transform: uppercase;
+  	top: 361px;
+  	width: 725px;
+}
+
+.closed h4 {
+	bottom: 0;
+	color: #ec1c24;
+	position: absolute;
+	width: 200px;
+}
+
+
 
 /* ==========================================================================
    Responsive
