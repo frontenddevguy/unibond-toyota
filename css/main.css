@@ -447,7 +447,57 @@ ul.entry-info a {
 
 
 @media only screen and (min-width: 240px) {
+	
+	.page-nav {
+		margin: 30px 0 0 40px;
+		width: 56%;
+	}
+	
+	.page-nav a {
+		font-size: 15px;
+		margin: 0 20px 20px 0;
+		padding: 8px 8px 4px 20px;
+		width: 100%;
+	}
+	
+	/* About */
 
+	.products {
+		display: block;
+		margin: 0 auto;
+		width: 80%;
+	}
+
+	.about-text {
+		color: #fff;
+		padding: 10%;
+	}
+
+	.about section h2 {
+		font-size: 50px;
+		line-height: 50px;
+		margin-top: 96px;
+		text-shadow: 2px 2px 0px rgba(34, 31, 31, 1);
+	}
+
+	.about section h3 {
+		font-size: 21px;
+		font-style: italic;
+		line-height: 25px;
+		position: static;
+		text-align: left;
+		text-shadow: none;
+	}
+
+	.about section h3,
+	.about section p {
+		font-family: Arial, Helvetica, sans-serif;
+		text-transform: none;
+	}
+	
+	footer nav a {
+		display: block;
+	}
 }
 
 @media only screen and (min-width: 320px) {
@@ -488,18 +538,6 @@ ul.entry-info a {
 		top: -2px;
 		right: 4px;
 		width: 50px;
-	}
-	
-	.page-nav {
-		margin: 30px 0 0 40px;
-		width: 56%;
-	}
-	
-	.page-nav a {
-		font-size: 15px;
-		margin: 0 20px 20px 0;
-		padding: 8px 8px 4px 20px;
-		width: 100%;
 	}
 	
 	.thankyou-header {
@@ -575,6 +613,7 @@ ul.entry-info a {
 	section nav {
 		float: left;
 	}
+
 	
 }
 
@@ -652,12 +691,46 @@ ul.entry-info a {
 	
 	.page-nav {
 		width: 95%;
+		margin-left: 38px;
 	}
 	
 	.page-nav a {
 		font-size: 13px;
 		padding: 8px 8px 4px 20px;
 		width: 130px;
+	}
+	
+	footer h3 {
+		color: #fff;
+		float: left;
+		font-style: italic;
+		line-height: 0;
+		padding: 0 0 0 10px;
+		text-transform: uppercase;
+	}
+
+	.footer-inner {
+		background-color: #CF0506;
+		border: 14px solid #fff;
+		height: 34px;
+		margin-left: 120px;
+		/*float: left;
+		width: 100%;*/
+	}
+	
+	footer nav {
+		float: right;
+		margin-right: -1px;
+	}
+
+	footer nav a {
+		border-right: 1px solid #fff;
+		color: #fff;
+		display: inline-block;
+		font-size: 11px;
+		line-height: 11px;
+		margin-top: 13px;
+		padding: 0 10px 0 5px;
 	}
 	
 	.thankyou .rotate {
@@ -674,6 +747,21 @@ ul.entry-info a {
 	  	line-height: 56px;
 	  	margin: 59px 0 0 90px;
 	  	width: 26%;
+	}
+	
+	
+	/* About */
+	
+	.products {
+		float: right;	
+		padding: 140px 30px 0 30px;
+		width: 280px;
+	}
+	
+	.about-text {
+		float: right;
+		padding: 0;
+		width: 400px;
 	}
 	
 }
@@ -719,7 +807,7 @@ ul.entry-info a {
 	}
 	
 	.page-nav {
-		width: 90%;
+		width: 100%;
 	}
 	
 	.page-nav a {
@@ -746,6 +834,22 @@ ul.entry-info a {
 	
 	.thankyou section nav {
 		margin: 50px 0 60px 60px;
+	}
+	
+	
+	/* About */
+	
+	.about-container {
+		width: 900px;
+	}
+	
+	.products {
+		padding: 64px 50px 0 59px;
+		width: 350px;
+	}
+	
+	.about-text {
+		width: 439px;
 	}
 }
 
@@ -784,36 +888,9 @@ footer h2 {
 	width: 100%;
 }
 
-footer h3 {
-	color: #fff;
-	float: left;
-	font-style: italic;
-	line-height: 0;
-	padding: 0 0 0 10px;
-	text-transform: uppercase;
-}
 
-.footer-inner {
-	background-color: #CF0506;
-	border: 14px solid #fff;
-	height: 34px;
-	margin-left: 120px;
-	/*float: left;
-	width: 100%;*/
-}
 
-footer nav {
-	float: right;
-	margin-right: -1px;
-}
 
-footer nav a {
-	border-right: 1px solid #fff;
-	color: #fff;
-	font-size: 11px;
-	line-height: 35px;
-	padding: 0 10px 0 5px;
-}
 
 
 
@@ -831,6 +908,8 @@ footer nav a {
 .landing-page {
 	
 }
+
+
 
 /* Thank You */
 
@@ -902,10 +981,20 @@ footer nav a {
 }
 
 .closed h4 {
-	bottom: 0;
-	color: #ec1c24;
+  	bottom: 29px;
+  	color: #EC1C24;
+  	font-size: 32px;
+  	left: 33px;
+  	line-height: 39px;
+  	position: absolute;
+  	text-align: left;
+  	width: 200px;
+}
+
+.logo_unibond-large {
 	position: absolute;
-	width: 200px;
+	bottom: 0;
+	left: 293px;
 }
 
 

@@ -2,7 +2,7 @@
 
 	<?php include 'includes/head.php'; ?>
 
-    <body class="closed">
+    <body class="about">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
@@ -13,46 +13,37 @@
 		</header>
 		
 		<div id="wrap">
-			<section class="gradient">
+			<section class="">
+				
+				<div class="about-container">
+					<div class="about-text">
+						<h2>About Unibond</h2>
+				
+						<h3>For over 60 years tradesmen have turned to UniBond for professional solutions.</h3>
+				
+						<p>Established in Camberley in 1946, UniBond was originally known for PVA. But we've come along way since those early days. The UniBond range now includes a broad range of products for both trade and DIY use including Grab Adhesives, Sealants, Tiling products, Tapes, Epoxies and Wood Glues. It is this long experience which ensures that UniBond continues to offer quality products and solutions today.</p>
+					</div>
+				
+					<img class="products" src="img/unibond-products.png" alt="Unibond products">
 			
-				<div class="rotate">
-					<a href="url1">
-						<div class="win-proace choice gradient">
-							<h2>
-								<span class="its">It's</span> 
-								<span class="win">Win</span> 
-								<span class="vehicle-name">a Toyota Proace</span>
-							</h2>
-					
-							<img class="vehicle" src="img/van.png" alt="">
-							
-							<span class="or">or</span>
-						</div>
-					</a>
+					<nav class="page-nav">
+						<a class="link-more_toyota" href="">MORE ABOUT THE
+		TOYOTA HILUX &amp; PROACE</a>
+
+						<a class="link-download" href="">
+							DOWNLOAD A <br />UNIBOND CATALOGUE
+							<img class="icon" src="img/icon_pdf.png">
+						</a>
 			
-					
+						<a class="link-more_unibond" href="">MORE ABOUT UNIBOND</a>
 			
-					<a href="url2">
-						<div class="win-hilux choice gradient">
-							<h2>
-								<span class="win">Win</span> 
-								<span class="vehicle-name">a Toyota Hilux</span>
-							</h2>
-					
-							<img class="vehicle" src="img/hilux.png" alt="">
-							
-							<img class="toyota-logo" src="img/logo_toyota.png" alt="">
-					
-						</div>
-					</a>
-					
-					<h4>Two Big Prizes to be Won with <span class="hidden">Unibond</span></h4>
-					
-					<img class="logo_unibond-large" src="img/logo_unibond-large.png" alt="Unibond logo">
-				</div>
-			
-				<div class="closed-banner">
-					<h3>Competition Closed</h3>
+						<a class="link-screwfix" href="">
+							FIND YOUR LOCAL SCREWFIX STORE
+							<img class="icon" src="img/icon_uk.png">
+						</a>
+
+					</nav>
+
 				</div>
 			
 
