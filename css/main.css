@@ -327,7 +327,6 @@ section {
 
 
 .choice {
-	float: left;
 	margin: 0 auto;
 	position: relative;
 	width: 90%;
@@ -357,15 +356,6 @@ section {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edeeee', endColorstr='#9d9b9b',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
 }
 
-.win-proace .vehicle {
-	margin-left: -30px;
-}
-
-.win-hilux img {
-	margin-left: 10px;
-	/*width: 120%;*/
-}
-
 .win-hilux .toyota-logo {
 	position: absolute;
 }
@@ -384,7 +374,7 @@ section h4 {
 }
 
 section h3 {
-	position: absolute;
+	margin: 0;
 	text-transform: none;
 	width: 100%;
 }
@@ -448,9 +438,57 @@ ul.entry-info a {
 
 @media only screen and (min-width: 240px) {
 	
+/*	.choice {
+		padding-bottom: 20px;
+	}*/
+	
+	.choice .vehicle {
+		display: block;
+		margin: 0 auto;
+		width: 90%;
+	}
+	
+	h2 .win {
+		font-size: 56px;
+	}
+	
+	.its {
+		font-size: 50px;
+		left: -11px;
+		position: absolute;
+		text-shadow: -3px 4px 0 #57585B;
+		top: -34px;
+	}
+	
+	.or {
+	  	font-size: 32px;
+	  	position: absolute;
+		right: 50%;
+		margin-right: -20px;
+		text-shadow: 2px 2px 0px rgba(34, 31, 31, 1);
+	  	bottom: -50px;
+		z-index: 10;
+	}
+	
+	section h3, 
+	section h4 {
+		font-size: 25px;
+		text-shadow: 2px 2px 0px rgba(34, 31, 31, 1);
+	}
+	
+	.win-hilux {
+		margin-top: 52px;
+	}
+	
+	.win-hilux .toyota-logo {
+		top: -2px;
+		right: 4px;
+		width: 40px;
+	}
+	
 	.page-nav {
-		margin: 30px 0 0 40px;
-		width: 56%;
+		margin: 30px 0 0 20px;
+		width: 70%;
 	}
 	
 	.page-nav a {
@@ -498,15 +536,57 @@ ul.entry-info a {
 	footer nav a {
 		display: block;
 	}
+	
+	.footer-inner h3 {
+		float: left;
+		padding-left: 14px;
+	}
+	
+	footer nav {
+		clear: both;
+	}
+	
+	footer nav a {
+		color: #000;
+		padding-left: 14px;
+	}
+	
+	.thankyou .rotate {
+		display: none;
+	}
+	
+	.thankyou-header {
+		font-size: 32px;
+	  	line-height: 44px;
+		margin: 30px 0 23px;
+	  	text-align: center;
+		text-shadow: 4px 4px 0 #221F1F;
+	}
+	
+	.closed .rotate {
+		display: none;
+	}
+	
+	.closed-banner h3 {
+		height: auto;
+		top: 50%;
+	}
 }
 
 @media only screen and (min-width: 320px) {
-	
+	.win-hilux .toyota-logo {
+		width: 50px;
+	}
 }
 
 @media only screen and (min-width: 480px) {
 	.rotate {
 		margin-top: 40px;
+	}
+	
+	.choice {
+		float: left;
+		/*padding-bottom: 0;*/
 	}
 	
 	.choice .vehicle {
@@ -521,57 +601,36 @@ ul.entry-info a {
 		margin-left: -10px;
 	}
 	
-	.or {
-	  	font-size: 52px;
-	  	position: absolute;
-	  	right: -32px;
-		text-shadow: 2px 2px 0px rgba(34, 31, 31, 1);
-	  	top: 16%;
-		z-index: 10;
-	}
-	
 	.win-hilux h2 {
 		margin-left: -29px;
 	}
 	
-	.win-hilux .toyota-logo {
-		top: -2px;
-		right: 4px;
-		width: 50px;
+	.thankyou .rotate {
+		display: block;
 	}
 	
 	.thankyou-header {
 		font-size: 58px;
 	  	line-height: 65px;
-		margin: 30px 0 23px;
-	  	text-align: center;
-		text-shadow: 4px 4px 0 #221F1F;
 	}
 	
 	.thankyou section nav {
 		margin: 50px 0 60px 20px;
-	}
-	
-	
-	
+	}	
 	
 	.choice {
 		height: 317px;
 		width: 216px;
+	}
+	
+	.win-hilux .vehicle {
+		margin-left: 10px;
 	}
 
 	.win-proace {
 		-webkit-border-top-left-radius: 30px;
 		-moz-border-radius-topleft: 30px;
 		border-top-left-radius: 30px;
-	}
-	
-	.its {
-		font-size: 50px;
-		left: -11px;
-		position: absolute;
-		text-shadow: -3px 4px 0 #57585B;
-		top: -34px;
 	}
 
 	h2 .win {
@@ -587,14 +646,8 @@ ul.entry-info a {
 	}
 	
 	section h3 {
-		margin: 0;
-		bottom: 0;
-	}
-
-	section h3, 
-	section h4 {
-		font-size: 25px;
-		text-shadow: 2px 2px 0px rgba(34, 31, 31, 1);
+		position: absolute;
+		/*bottom: 0;*/
 	}
 
 	.win-hilux {
@@ -602,8 +655,9 @@ ul.entry-info a {
 	}
 
 	.or {
-	  	font-size: 32px;
 	  	right: -22px;
+	  	top: 16%;
+		margin: 0;
 	}
 
 	.toyota-logo {
@@ -612,6 +666,25 @@ ul.entry-info a {
 
 	section nav {
 		float: left;
+	}
+	
+	.footer-inner h3 {
+		padding-left: 30px;
+	}
+	
+	.page-nav {
+		width: 56%;
+	}
+	
+	
+	/* Closed */
+	
+	.closed .rotate {
+		display: block;
+	}
+	
+	.closed-banner h3 {
+		font-size: 42px;
 	}
 
 	
@@ -654,6 +727,11 @@ ul.entry-info a {
 		position: absolute;
 		text-shadow: -3px 4px 0 #57585B;
 		top: -49px;
+	}
+	
+	.or {
+		font-size: 44px;
+		right: -27px;
 	}
 
 	h2 .win {
@@ -719,6 +797,7 @@ ul.entry-info a {
 	}
 	
 	footer nav {
+		clear: none;
 		float: right;
 		margin-right: -1px;
 	}
@@ -764,6 +843,12 @@ ul.entry-info a {
 		width: 400px;
 	}
 	
+	
+	/* Closed */
+	
+	.closed-banner h3 {
+		font-size: 64px;
+	}
 }
 
 @media only screen and (min-width: 1024px) {	
@@ -807,7 +892,7 @@ ul.entry-info a {
 	}
 	
 	.page-nav {
-		width: 100%;
+		width: 90%;
 	}
 	
 	.page-nav a {
@@ -844,12 +929,19 @@ ul.entry-info a {
 	}
 	
 	.products {
-		padding: 64px 50px 0 59px;
+		padding: 120px 50px 0 59px;
 		width: 350px;
 	}
 	
 	.about-text {
 		width: 439px;
+	}
+	
+	
+	/* Closed */
+	
+	.closed-banner h3 {
+	  	font-size: 72px;
 	}
 }
 
@@ -971,13 +1063,15 @@ footer h2 {
 
 .closed-banner h3 {
   	background-color: #ED1C24;
-  	font-size: 72px;
-  	height: 100px;
-  	left: 86px;
+  	/*font-size: 72px;*/
+  	/*height: 100px;*/
+  	/*left: 86px;*/
+	left: 10%;
   	position: absolute;
   	text-transform: uppercase;
   	top: 361px;
-  	width: 725px;
+	width: 80%;
+/*  	width: 725px;*/
 }
 
 .closed h4 {
