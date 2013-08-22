@@ -1,60 +1,21 @@
 <!DOCTYPE html>
 
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8">
-	<style type="text/css">
-		#wrap {display:table;height:100%}
-	</style>
- <![endif]-->
-
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-        <!-- <link rel="stylesheet" href="css/normalize.css"> -->
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    </head>
-
-    <body class="thankyou">
+	<?php include 'includes/head.php'; ?>
+	
+    <body class="entry-form">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
         
 		<header>
-			<h1>Unibond xx</h1>
+			<h1>Unibond</h1>
 		</header>
 		
 		<div id="wrap">
-			<section class="gradient">
+			<section>
 			
 				<div class="rotate">
-					<a href="url1">
-						<div class="win-proace vehicle-choice gradient">
-							<h2>
-								<span class="its">It's</span> 
-								<span class="win">Win</span> 
-								<span class="vehicle-name">a Toyota Proace</span>
-							</h2>
-					
-							<img  class="vehicle" src="img/van.png" alt="">
-							
-							<span class="or">or</span>
-						</div>
-					</a>
-			
-					
 			
 					<a href="url2">
 						<div class="win-hilux vehicle-choice gradient">
@@ -66,51 +27,92 @@
 							<img class="vehicle" src="img/hilux.png" alt="">
 							
 							<img class="toyota-logo" src="img/logo_toyota.png" alt="">
-							
 					
+							<ul>
+								<li>ENGINE: 2.5L DIESEL</li>
+								<li>POWER: 144 hp</li>
+								<li>FUEL CONSUMPTION:  38.7 mpg</li>
+								<li>CARGO AREA: 1.5 m x 1.5 m x 0.4 m</li>
+							</ul>
+
+
 						</div>
 					</a>
 				</div>
 				
-				<h2 class="thankyou-header">Thank You for Your Entry</h2>
+				
+				
+				
+
+				<?php /*include 'includes/form_hilux/includeform.html';*/ ?>				
+			
+			
+			
+				<!-- <iframe id="entryform" frameborder="0" height="730" src="includes/form_hilux/includeform.html" width="700" ALLOWTRANSPARENCY="true"></iframe> -->
+				
+
+
+
+
+				<div id="wufoo-z7x4m1">
+				<!-- Fill out my <a href="http://unibonduk.wufoo.com/forms/z7x4m1">online form</a>. -->
+				
+				<style type="text/css">
+					
+				</style>
+				
+				</div>
+				
+				<script type="text/javascript">var z7x4m1;(function(d, t) {
+				var s = d.createElement(t), options = {
+				'userName':'unibonduk', 
+				'formHash':'z7x4m1', 
+				'autoResize':true,
+				'height':'1411',
+				'async':true,
+				'header':'show'};
+				s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+				s.onload = s.onreadystatechange = function() {
+				var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+				try { z7x4m1 = new WufooForm();z7x4m1.initialize(options);z7x4m1.display(); } catch (e) {}};
+				var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+				})(document, 'script');</script>
+			
+				
+				
+				
 			
 				<nav class="page-nav">
 					<a class="link-more_toyota" href="">MORE ABOUT THE
 	TOYOTA HILUX &amp; PROACE</a>
 
-					<a class="link-download" href="">DOWNLOAD A UNIBOND CATALOGUE</a>
-			
+					<a class="link-download" href="">
+						DOWNLOAD A <br />UNIBOND CATALOGUE
+						<img class="icon" src="img/icon_pdf.png">
+					</a>
+		
 					<a class="link-more_unibond" href="">MORE ABOUT UNIBOND</a>
-			
-					<a class="link-screwfix" href="">FIND YOUR LOCAL SCREWFIX STORE</a>
+		
+					<a class="link-screwfix" href="">
+						FIND YOUR LOCAL SCREWFIX STORE
+						<img class="icon" src="img/icon_uk.png">
+					</a>
 
 				</nav>
+
 			
 
 			</section>
 		</div>
 		
 		
-		<footer>
-			<h2>Unibond</h2>
-			
-			<div class="footer-inner">
-				<h3>The Professionals Choice</h3>
-			
-				<nav>
-					<a href="">Terms &amp; Conditions of Entry</a>
-					<a href="">Terms of Use</a>
-					<a href="">Privacy</a>
-				</nav>
-			</div>
-		</footer>
+
+		
+		<?php include 'includes/footer.php'; ?>
+		
 		
 		
 
-		
-		
-		
-		
 		
 		
 		

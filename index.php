@@ -17,7 +17,7 @@
 			
 				<div class="rotate">
 					<a href="url1">
-						<div class="win-proace choice gradient">
+						<div class="win-proace vehicle-choice gradient">
 							<h2>
 								<span class="its">It's</span> 
 								<span class="win">Win</span> 
@@ -35,7 +35,7 @@
 					
 			
 					<a href="url2">
-						<div class="win-hilux choice gradient">
+						<div class="win-hilux vehicle-choice gradient">
 							<h2>
 								<span class="win">Win</span> 
 								<span class="vehicle-name">a Toyota Hilux</span>

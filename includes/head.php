@@ -21,6 +21,14 @@
 
         <!-- <link rel="stylesheet" href="css/normalize.css"> -->
         <link rel="stylesheet" href="css/main.css">
+		
+
+		
+		<link href="includes/form_hilux/css/structure.css" rel="stylesheet">
+		<link href="includes/form_hilux/css/form.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/form.css">
+		
+		
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 		
 		<!--[if lte IE 8]>

@@ -6,7 +6,7 @@
 			</div>
 			
 			<div class="footer-inner">
-				<h3>The Professionals Choice</h3>
+				<h3>The Professional's Choice</h3>
 			
 				<nav>
 					<a href="">Terms &amp; Conditions of Entry</a>

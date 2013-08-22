@@ -326,7 +326,7 @@ section {
 }
 
 
-.choice {
+.vehicle-choice {
 	margin: 0 auto;
 	position: relative;
 	width: 90%;
@@ -438,11 +438,11 @@ ul.entry-info a {
 
 @media only screen and (min-width: 240px) {
 	
-/*	.choice {
+/*	.vehicle-choice {
 		padding-bottom: 20px;
 	}*/
 	
-	.choice .vehicle {
+	.vehicle-choice .vehicle {
 		display: block;
 		margin: 0 auto;
 		width: 90%;
@@ -584,12 +584,12 @@ ul.entry-info a {
 		margin-top: 40px;
 	}
 	
-	.choice {
+	.vehicle-choice {
 		float: left;
 		/*padding-bottom: 0;*/
 	}
 	
-	.choice .vehicle {
+	.vehicle-choice .vehicle {
 		width: 100%;
 	}
 	
@@ -618,7 +618,7 @@ ul.entry-info a {
 		margin: 50px 0 60px 20px;
 	}	
 	
-	.choice {
+	.vehicle-choice {
 		height: 317px;
 		width: 216px;
 	}
@@ -705,13 +705,13 @@ ul.entry-info a {
 				transform-origin: top left;  
 	}
 	
-	.choice {
+	.vehicle-choice {
 		height: 454px;
 		margin-left: 96px;
 		width: 265px;
 	}
 	
-	.choice .vehicle {
+	.vehicle-choice .vehicle {
 		width: 105%;
 	
 	    -webkit-transform: rotate(10deg);  /* Chrome, Safari 3.1+ */
@@ -816,7 +816,7 @@ ul.entry-info a {
 		margin-top: 38px;
 	}
 	
-	.thankyou .choice {
+	.thankyou .vehicle-choice {
 		margin-left: 20px;
 	}
 	
@@ -852,7 +852,7 @@ ul.entry-info a {
 }
 
 @media only screen and (min-width: 1024px) {	
-	.choice {
+	.vehicle-choice {
 		height: 540px;
 		width: 337px;
 	}
@@ -906,7 +906,7 @@ ul.entry-info a {
 		margin-top: 172px;
 	}
 	
-	.thankyou .choice {
+	.thankyou .vehicle-choice {
 		margin-left: 96px;
 	}
 	
@@ -1002,6 +1002,11 @@ footer h2 {
 }
 
 
+/* Entry Form */
+
+.entry-form {
+	
+}
 
 /* Thank You */
 
@@ -1010,7 +1015,7 @@ footer h2 {
 	float: left;
 }
 
-.thankyou .choice {
+.thankyou .vehicle-choice {
 	height: 317px;
 	width: 216px;
 }

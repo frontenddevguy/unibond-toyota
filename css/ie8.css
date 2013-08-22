@@ -24,13 +24,13 @@ img {
 				transform-origin: top left;  
 	}
 	
-	.choice {
+	.vehicle-choice {
 		height: 454px;
 		margin-left: 96px;
 		width: 265px;
 	}
 	
-	.choice .vehicle {
+	.vehicle-choice .vehicle {
 		width: 105%;
 	
 	    -webkit-transform: rotate(10deg);  /* Chrome, Safari 3.1+ */
@@ -95,7 +95,7 @@ img {
 		margin-top: 38px;
 	}
 	
-	.thankyou .choice {
+	.thankyou .vehicle-choice {
 		margin-left: 20px;
 	}
 	
@@ -110,7 +110,7 @@ img {
 /*}*/
 
 /*@media only screen and (min-width: 1024px) {	*/
-	.choice {
+	.vehicle-choice {
 		height: 540px;
 		width: 337px;
 	}
@@ -164,7 +164,7 @@ img {
 		margin-top: 172px;
 	}
 	
-	.thankyou .choice {
+	.thankyou .vehicle-choice {
 		margin-left: 96px;
 	}
 	
