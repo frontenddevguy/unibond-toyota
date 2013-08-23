@@ -24,8 +24,8 @@
 		
 
 		
-		<link href="includes/form_hilux/css/structure.css" rel="stylesheet">
-		<link href="includes/form_hilux/css/form.css" rel="stylesheet">
+		<!-- <link href="includes/form_hilux/css/structure.css" rel="stylesheet">
+		<link href="includes/form_hilux/css/form.css" rel="stylesheet"> -->
 		<link rel="stylesheet" href="css/form.css">
 		
 		
@@ -34,4 +34,21 @@
 		<!--[if lte IE 8]>
 			<link rel="stylesheet" href="css/ie8.css">
 		 <![endif]-->
+			
+			
+			
+			<script type="text/javascript">
+			function trackOutboundLink(link, category, action) { 
+ 
+			try { 
+			_gaq.push(['_trackEvent', category , action]); 
+			} catch(err){}
+ 
+			setTimeout(function() {
+			document.location.href = link.href;
+			}, 100);
+			}
+			</script>
+			
+			
     </head>

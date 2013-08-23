@@ -7,11 +7,11 @@
 			
 			<div class="footer-inner">
 				<h3>The Professional's Choice</h3>
-			
-				<nav>
-					<a href="">Terms &amp; Conditions of Entry</a>
-					<a href="">Terms of Use</a>
-					<a href="">Privacy</a>
-				</nav>
 			</div>
+			
+			<nav>
+				<a href="entry-terms.php">Terms &amp; Conditions of Entry</a>
+				<a href="terms.php">Terms of Use</a>
+				<a href="privacy.php">Privacy</a>
+			</nav>
 		</footer>
