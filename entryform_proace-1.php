@@ -1,3 +1,6 @@
+<?php include 'includes/form.php'; ?>
+
+
 <!DOCTYPE html>
 
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -21,14 +24,13 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <!-- <link rel="stylesheet" href="css/normalize.css"> -->
         <link rel="stylesheet" href="css/main.css">
 		
+		<link type="text/css" rel="stylesheet" href="css/validform.css" />
+		<!-- <link type="text/css" rel="stylesheet" href="css/form.css" /> -->
 
-		
-		<!-- <link href="includes/form_hilux/css/structure.css" rel="stylesheet">
-		<link href="includes/form_hilux/css/form.css" rel="stylesheet"> -->
-		<!-- <link rel="stylesheet" href="css/form.css"> -->
+		<script type="text/javascript" src="libraries/jquery.js"></script>
+		<script type="text/javascript" src="libraries/validform.js"></script>
 		
 		
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -70,8 +72,7 @@
 			
 				<div class="rotate">
 			
-					<!-- <a href="url2"> -->
-						<div class="win-proace vehicle-choice gradient">
+					<div class="win-proace vehicle-choice gradient">
 							<h2>
 								<span class="win">Win</span> 
 								<span class="vehicle-name">a Toyota Proace</span>
@@ -90,61 +91,40 @@
 
 
 						</div>
-					<!-- </a> -->
+					
 				</div>
 				
 				
+				<div class="validform_wrapper">
+					<header>
+						<h2>Entry Form</h2>
+						<h3>Your details</h3>
+					</header>
 				
+					<?php echo $strOutput; ?>
 				
-
-				<?php /*include 'includes/form_hilux/includeform.html';*/ ?>				
-			
-			
-				<div class="form-container">
-					<iframe id="entryform" frameborder="0" height="813" src="includes/form_hilux/includeform.html" width="580" ALLOWTRANSPARENCY="true"></iframe>
-				
-
-
-
-
-					<!-- <div id="wufoo-z7x4m1"></div> -->
-				
-					<script type="text/javascript">// var z7x4m1;(function(d, t) {
-	// 				var s = d.createElement(t), options = {
-	// 				'userName':'unibonduk', 
-	// 				'formHash':'z7x4m1', 
-	// 				'autoResize':true,
-	// 				'height':'1411',
-	// 				'async':true,
-	// 				'header':'show'};
-	// 				s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
-	// 				s.onload = s.onreadystatechange = function() {
-	// 				var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-	// 				try { z7x4m1 = new WufooForm();z7x4m1.initialize(options);z7x4m1.display(); } catch (e) {}};
-	// 				var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-	// 				})(document, 'script');</script>
-			
-				
-				
-				
-					<a href="entryform_hilux.php">
-						<div class="win-hilux vehicle-choice gradient alternative">
-							<span class="or">or</span>
-						
-							<h2>
-								<span class="win">Win</span> 
-								<span class="vehicle-name">a Toyota Hiace</span>
-							</h2>
-						
-							<img class="vehicle" src="img/hilux.png" alt="">
-						</div>
-					</a>
 				</div>
+			
+				
+				
+				
+				<a href="entryform_hilux.php">
+					<div class="win-hilux vehicle-choice gradient alternative">
+						<span class="or">or</span>
+					
+						<h2>
+							<span class="win">Win</span> 
+							<span class="vehicle-name">a Toyota Hiace</span>
+						</h2>
+					
+						<img class="vehicle" src="img/hilux.png" alt="">
+					</div>
+				</a>
+				
 				
 			
 				<nav class="page-nav">
-					<a class="link-more_toyota" href="">MORE ABOUT THE
-	TOYOTA HILUX &amp; PROACE</a>
+					<a class="link-more_toyota" href="">MORE ABOUT THE TOYOTA HILUX &amp; PROACE</a>
 
 					<a class="link-download" href="">
 						DOWNLOAD A <br />UNIBOND CATALOGUE

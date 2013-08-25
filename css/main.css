@@ -384,6 +384,11 @@ section {
 }
 
 
+.vehicle-choice ul {
+	list-style: none;
+}
+
+
 .win-hilux .toyota-logo {
 	position: absolute;
 }
@@ -460,26 +465,10 @@ ul.entry-info a {
 }
 
 
-.vehicle-choice.alternative {
-	right: -292px;
-	height: 265px;
-	position: absolute;
-	bottom: 160px;
-	width: 300px;
-	
-    -webkit-transform: rotate(10deg);  /* Chrome, Safari 3.1+ */
-       -moz-transform: rotate(10deg);  /* Firefox 3.5-15 */
-        -ms-transform: rotate(10deg);  /* IE 9 */
-         -o-transform: rotate(10deg);  /* Opera 10.50-12.00 */
-            transform: rotate(10deg);  /* Firefox 16+, IE 10+, Opera 12.10+ */
-		
-			transform-origin: top left;  
-}
-
-
-
-.entry-form .vehicle-choice {
-	margin-right: 93px;
+.entry-form .vehicle-choice.alternative {
+	height: auto;
+	position: relative;
+	width: 250px;
 }
 
 .entry-form .win-proace {
@@ -513,21 +502,118 @@ ul.entry-info a {
 
 .alternative .or {
 	font-size: 38px;
-	left: 56px;
+	right: 190px;
 	top: 7px;
 }
 
-.form-container .vehicle-choice .vehicle {
-	float: right;
-	width: 73%;
-	
-	-moz-transform: scaleX(-1);
-	    -o-transform: scaleX(-1);
-	    -webkit-transform: scaleX(-1);
-	    transform: scaleX(-1);
-	    filter: FlipH;
-	    -ms-filter: "FlipH";
+.alternative img.vehicle {
+    -webkit-transform: rotate(355deg);  /* Chrome, Safari 3.1+ */
+       -moz-transform: rotate(355deg);  /* Firefox 3.5-15 */
+        -ms-transform: rotate(355deg);  /* IE 9 */
+         -o-transform: rotate(355deg);  /* Opera 10.50-12.00 */
+            transform: rotate(355deg);  /* Firefox 16+, IE 10+, Opera 12.10+ */
 }
+
+
+/* ==========================================================================
+   Form 
+   ========================================================================== */
+
+.validform_wrapper {
+	float: left;
+	padding: 20px;
+    position: relative;
+	
+	
+	-webkit-box-shadow:rgba(0,0,0,0.2) 0 0 5px;
+	-moz-box-shadow:rgba(0,0,0,0.2) 0 0 5px;
+	-o-box-shadow:rgba(0,0,0,0.2) 0 0 5px;
+	box-shadow:rgba(0,0,0,0.2) 0 0 5px;
+	
+	-webkit-border-top-left-radius: 30px;
+	-moz-border-radius-topleft: 30px;
+	border-top-left-radius: 30px;
+	background: #ffffff; /* Old browsers */
+
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2E1YTNhMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+
+	background: -moz-linear-gradient(-45deg,  #ffffff 0%, #a5a3a3 100%); /* FF3.6+ */
+
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ffffff), color-stop(100%,#a5a3a3)); /* Chrome,Safari4+ */
+
+	background: -webkit-linear-gradient(-45deg,  #ffffff 0%,#a5a3a3 100%); /* Chrome10+,Safari5.1+ */
+
+	background: -o-linear-gradient(-45deg,  #ffffff 0%,#a5a3a3 100%); /* Opera 11.10+ */
+
+	background: -ms-linear-gradient(-45deg,  #ffffff 0%,#a5a3a3 100%); /* IE10+ */
+
+	background: linear-gradient(135deg,  #ffffff 0%,#a5a3a3 100%); /* W3C */
+
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#a5a3a3',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+
+	-webkit-box-shadow: 5px 5px 13px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    5px 5px 13px rgba(50, 50, 50, 0.75);
+	box-shadow:         5px 5px 13px rgba(50, 50, 50, 0.75);
+
+	text-transform: none;
+}
+
+.validform_wrapper h2 {
+	color: #EC1C24;
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+
+.validform_wrapper h3 {
+	color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	position: static;
+	text-align: left;
+	text-shadow: none;
+}
+
+
+.vf__description p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	margin: 0 0 20px 0;
+}
+
+.validform_wrapper input {
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	
+	border-color: #7C7C7C #C3C3C3 #DDDDDD;
+    border-style: solid;
+    border-width: 1px;
+	
+	font-size: 100%;
+	
+	padding: 2px 0;
+}
+
+.validform_wrapper label {
+	font-size: 13px;
+	line-height: 150%;
+    margin: 0;
+    padding: 0 0 3px;
+}
+
+fieldset div {
+	float: left;
+	padding: 6px 1% 9px;
+	width: 100%;
+}
+
+
+
 
 
 
@@ -568,7 +654,7 @@ footer nav a {
 /* Mobile First Responsive Styles */
 
 
-@media only screen and (min-width: 240px) {
+@media only screen and (min-width: 1px) {
 	
 /*	.vehicle-choice {
 		padding-bottom: 20px;
@@ -665,23 +751,20 @@ footer nav a {
 		text-transform: none;
 	}
 	
-	footer nav a {
-		display: block;
+	.entry-form .form-container {
+		height: 900px;
+		margin: 30px;
+		padding: 0;
 	}
 	
-	.footer-inner h3 {
-		float: left;
-		padding-left: 14px;
+	.entry-form .rotate {
+		display: none;
 	}
 	
-	footer nav {
-		clear: both;
-	}
-	
-	footer nav a {
-		color: #000;
-		padding-left: 14px;
-	}
+/*	.entry-form .vehicle-choice.alternative {
+	  left: -20px;
+	  top: 700px;
+	}*/
 	
 	.thankyou .rotate {
 		display: none;
@@ -702,6 +785,24 @@ footer nav a {
 	.closed-banner h3 {
 		height: auto;
 		top: 50%;
+	}
+	
+	footer nav a {
+		display: block;
+	}
+	
+	.footer-inner h3 {
+		float: left;
+		padding-left: 14px;
+	}
+	
+	footer nav {
+		clear: both;
+	}
+	
+	footer nav a {
+		color: #000;
+		padding-left: 14px;
 	}
 	
 	footer h3 {
@@ -820,6 +921,12 @@ footer nav a {
 	}
 	
 	
+	/* Entry Form */
+	
+
+
+	
+	
 	/* Closed */
 	
 	.closed .rotate {
@@ -846,11 +953,25 @@ footer nav a {
 	}
 }
 
+
+
+@media only screen and (min-width: 640px) {
+	.validform_wrapper {
+		width: 80%;
+		margin-left: 5%;
+	}
+	
+	.entry-form .vehicle-choice.alternative {
+		clear: left;
+	    margin: 20px 0 100px 40px;
+		transform: none;
+	}
+}
+
 @media only screen and (min-width: 768px) {
 	.rotate {
 		float: left;
 		margin-top: 46px;
-		/*width: 100%;*/
 	
 	    -webkit-transform: rotate(350deg);  /* Chrome, Safari 3.1+ */
 	       -moz-transform: rotate(350deg);  /* Firefox 3.5-15 */
@@ -868,7 +989,6 @@ footer nav a {
 	}
 	
 	.vehicle-choice .vehicle {
-		/*width: 105%;*/
 	
 	    -webkit-transform: rotate(10deg);  /* Chrome, Safari 3.1+ */
 	       -moz-transform: rotate(10deg);  /* Firefox 3.5-15 */
@@ -876,6 +996,8 @@ footer nav a {
 	         -o-transform: rotate(10deg);  /* Opera 10.50-12.00 */
 	            transform: rotate(10deg);  /* Firefox 16+, IE 10+, Opera 12.10+ */
 	}
+	
+
 	
 	.win-hilux .vehicle {
 		margin-top: 40px;
@@ -939,19 +1061,25 @@ footer nav a {
 		width: 123px;
 	}
 	
-	footer nav {
-		clear: none;
-		float: right;
-		margin-right: -1px;
-	}
 
-	footer nav a {
-		border-right: 1px solid #fff;
-		color: #fff;
-		line-height: 11px;
-		margin-top: 13px;
-		padding: 0 10px 0 5px;
+	
+
+	
+	
+	/* About */
+	
+	.products {
+		float: right;	
+		padding: 140px 30px 0 30px;
+		width: 280px;
 	}
+	
+	.about-text {
+		float: right;
+		padding: 0;
+		width: 400px;
+	}
+	
 	
 	.thankyou .rotate {
 		margin-top: 38px;
@@ -970,18 +1098,29 @@ footer nav a {
 	}
 	
 	
-	/* About */
 	
-	.products {
-		float: right;	
-		padding: 140px 30px 0 30px;
-		width: 280px;
+	/* Entry Form 1 column */
+	
+	.validform_wrapper {
+		margin: 50px 0 50px 50px;
+		width: 500px;
 	}
 	
-	.about-text {
-		float: right;
-		padding: 0;
-		width: 400px;
+	.entry-form .vehicle-choice.alternative {
+		margin: -63px 0 100px 70px;
+		
+	    -webkit-transform: rotate(10deg);  /* Chrome, Safari 3.1+ */
+	       -moz-transform: rotate(10deg);  /* Firefox 3.5-15 */
+	        -ms-transform: rotate(10deg);  /* IE 9 */
+	         -o-transform: rotate(10deg);  /* Opera 10.50-12.00 */
+	            transform: rotate(10deg);  /* Firefox 16+, IE 10+, Opera 12.10+ */
+		
+				transform-origin: top left;  
+	}
+	
+
+	fieldset div {
+		width: 48%;
 	}
 	
 	
@@ -993,9 +1132,20 @@ footer nav a {
 	
 	
 	footer nav {
+		clear: none;
+		float: right;
+		margin-right: -1px;
 		position: absolute;
 		bottom: 22px;
 		right: 14px;
+	}
+
+	footer nav a {
+		border-right: 1px solid #fff;
+		color: #fff;
+		line-height: 11px;
+		margin-top: 13px;
+		padding: 0 10px 0 5px;
 	}
 }
 
@@ -1021,19 +1171,18 @@ footer nav a {
 		top: -52px;
 	}
 	
-	.win-hilux .toyota-logo {
+	.win-hilux .toyota-logo,
+	.entry-form .toyota-logo {
+		position: absolute;
 		top: -2px;
 		right: 8px;
 		width: 65px;
 	}
 	
-	.win-hilux h2 {
+	.win-hilux h2,
+	.entry-form .vehicle-choice h2 {
 		margin-left: -40px;
 	}
-	
-/*	section h3 {
-		bottom: 12px;
-	}*/
 	
 	section h4 {
 		font-size: 38px;
@@ -1044,37 +1193,6 @@ footer nav a {
 		margin-right: 40px;
 		padding: 8px 8px 4px 24px;
 		width: 150px;
-	}
-	
-	
-	/* Entry Form */	
-	
-	
-	.entry-form .form-container {
-		width: 1022px;
-	}
-	
-	
-	/* Thank You */
-	
-	
-	.thankyou .rotate {
-		margin-top: 172px;
-	}
-	
-	.thankyou .vehicle-choice {
-		margin-left: 96px;
-	}
-	
-	.thankyou-header {
-		font-size: 75px;
-		line-height: 82px;
-		margin: 146px 0 0 90px;
-		width: 30%;
-	}
-	
-	.thankyou section nav {
-		/*margin: 50px 0 60px 60px;*/
 	}
 	
 	
@@ -1094,6 +1212,36 @@ footer nav a {
 	}
 	
 	
+	/* Entry Form */
+	
+	.entry-form .vehicle-choice.alternative {
+		clear: none;
+		height: auto;
+		margin: 500px 0 0 0;
+	}
+		
+	
+	
+	/* Thank You */
+	
+	
+	.thankyou .rotate {
+		margin-top: 172px;
+	}
+	
+	.thankyou .vehicle-choice {
+		margin-left: 96px;
+	}
+	
+	.thankyou-header {
+		font-size: 75px;
+		line-height: 82px;
+		margin: 146px 0 0 90px;
+		width: 30%;
+	}
+
+	
+	
 	/* Closed */
 	
 	.closed-banner h3 {
@@ -1102,7 +1250,49 @@ footer nav a {
 }
 
 
+@media only screen and (min-width: 1170px) {
+	/* Entry Form */
+	
+	.entry-form .rotate {
+		display: none;
+	}
+	
+	.entry-form .rotate .vehicle-choice {
+		height: 430px;
+	}
+	
+	.entry-form .rotate .vehicle-choice h2 .win {
+		font-size: 86px;
+		margin-top: -10px;
+		text-shadow: -3px 4px 0px rgba(255, 255, 255, 1);
+	}
 
+	.entry-form .rotate .vehicle-choice h2 .vehicle-name {
+		font-size: 22px;
+		margin-top: -18px;
+		text-shadow: -3px 4px 0 #FFFFFF;
+	}
+}
+
+
+@media only screen and (min-width: 1358px) {
+	
+	/* Entry Form */	
+	
+	.entry-form .rotate {
+		display: block;
+	}
+	
+	.entry-form .form-container {
+		width: 1022px;
+	}
+	
+	.entry-form .rotate .vehicle-choice {
+		height: 540px;
+		width: 337px;
+	    
+	}
+}	
 
 
 
@@ -1141,29 +1331,6 @@ footer h2 {
 
 
 
-
-
-
-
-
-
-
-
-
-/* Pages */
-
-/* Landing */
-
-.landing-page {
-	
-}
-
-
-/* Entry Form */
-
-.entry-form {
-	
-}
 
 /* Thank You */
 
@@ -1252,75 +1419,6 @@ footer h2 {
 	bottom: 0;
 	left: 293px;
 }
-
-
-
-/* ==========================================================================
-   Responsive
-   ========================================================================== */
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-/* Styles */
-}
-
-/* Smartphones (landscape) ----------- */
-@media only screen 
-and (min-width : 321px) {
-/* Styles */
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen 
-and (max-width : 320px) {
-/* Styles */
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-/* Styles */
-}
-
-/* iPads (landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
-/* Styles */
-}
-
-/* iPads (portrait) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) {
-/* Styles */
-}
-
-/* Desktops and laptops ----------- */
-@media only screen 
-and (min-width : 1224px) {
-/* Styles */
-}
-
-/* Large screens ----------- */
-@media only screen 
-and (min-width : 1824px) {
-/* Styles */
-}
-
-/* iPhone 4 ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-/* Styles */
-}
-
-
 
 
 

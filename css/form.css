@@ -1,13 +1,14 @@
 
 
 /* ==========================================================================
-   Form iFrame
+   Form 
    ========================================================================== */
 
-#wufoo-z7x4m1 {
-	position: absolute;
-	top: 120px;
-	z-index: 20;
+.validform_wrapper {
+	float: left;
+	padding: 20px;
+    position: relative;
+	
 	
 	-webkit-box-shadow:rgba(0,0,0,0.2) 0 0 5px;
 	-moz-box-shadow:rgba(0,0,0,0.2) 0 0 5px;
@@ -37,30 +38,90 @@
 
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#a5a3a3',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
 
+	-webkit-box-shadow: 5px 5px 13px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    5px 5px 13px rgba(50, 50, 50, 0.75);
+	box-shadow:         5px 5px 13px rgba(50, 50, 50, 0.75);
 
 	text-transform: none;
 }
 
-@media only screen and (min-width: 240px) {
-	#wufoo-z7x4m1 {
-		left: 5%;
-		width: 90%;
-	}
+.validform_wrapper h2 {
+	color: #EC1C24;
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0;
+    text-transform: uppercase;
 }
+
+
+.validform_wrapper h3 {
+	color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	position: static;
+	text-align: left;
+	text-shadow: none;
+}
+
+
+.vf__description p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	margin: 0 0 20px 0;
+}
+
+form {
+	
+}
+
+.validform_wrapper input {
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	
+	border-color: #7C7C7C #C3C3C3 #DDDDDD;
+    border-style: solid;
+    border-width: 1px;
+	
+	font-size: 100%;
+	
+	padding: 2px 0;
+}
+
+.validform_wrapper label {
+	font-size: 13px;
+	line-height: 150%;
+    margin: 0;
+    padding: 0 0 3px;
+}
+
+fieldset div {
+	float: left;
+	padding: 6px 1% 9px;
+	/*width: 48%;*/
+	width: 100%;
+}
+
 
 @media only screen and (min-width: 768px) {
-	#wufoo-z7x4m1 {
-		left: 250px;
-		width: 500px;
-	}
-}
 
-@media only screen and (min-width: 1024px) {
-	#wufoo-z7x4m1 {
-		left: 377px;
-		width: 580px;
-	}
+
 }
 
 
 
+@media only screen and (min-width: 1360px) {
+	.validform {
+		
+	}
+	
+	fieldset div {
+		
+	}
+}
+
+
+/*.validform_wrapper fieldset div {
+	float: left;
+	width: 48%;
+}*/
