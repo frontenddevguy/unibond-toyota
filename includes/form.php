@@ -219,5 +219,23 @@ $objForm->setMainAlert("One or more errors occurred. Check the marked fields and
 //*** As this method already states, it sets the submit button's label.
 $objForm->setSubmitLabel("Send");
 
-$strOutput = $objForm->toHtml();
+// $strOutput = $objForm->toHtml();
+
+
+$strOutput = "";
+
+if ($objForm->isSubmitted() && $objForm->isValid()) {
+
+
+	// MySQL connect here
+        
+    //*** Set the output to a friendly thank you note.
+	header("Location: thankyou.php",303);
+	exit();
+} else {
+    //*** The form has not been submitted or is not valid.
+    $strOutput = $objForm->toHtml();
+}
+
+
 ?>
