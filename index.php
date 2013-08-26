@@ -69,7 +69,7 @@
 			<section class="gradient">
 			
 				<div class="rotate">
-					<a href="url1">
+					<a href="entryform_proace.php">
 						<div class="win-proace vehicle-choice gradient">
 							<h2>
 								<span class="its">It's</span> 
@@ -87,7 +87,7 @@
 			
 					
 			
-					<a href="url2">
+					<a href="entryform_hilux.php">
 						<div class="win-hilux vehicle-choice gradient">
 							<h2>
 								<span class="win">Win</span> 
@@ -111,7 +111,7 @@
 			<h4>Two Big Prizes to be Won with Unibond at Screwfix</h4>
 			
 			<ul class="entry-info">
-				<li>Buy any Loctite, Nitromors, Solvite or UniBond product in <a href="">Screwfix</a></li>
+				<li>Buy any Loctite, Nitromors, Solvite or UniBond product in <a href="http://www.screwfix.com/" onClick="trackOutboundLink(this, 'Outbound Links', 'http://www.screwfix.com/'); return false;">Screwfix</a></li>
 			
 				<li>Choose which vehicle you’d like a chance of winning</li>
 			</ul>

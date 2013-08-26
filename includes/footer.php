@@ -11,7 +11,7 @@
 			
 			<nav>
 				<a href="entry-terms.php">Terms &amp; Conditions of Entry</a>
-				<a href="terms.php">Terms of Use</a>
+				<a href="terms-use.php">Terms of Use</a>
 				<a href="privacy.php">Privacy</a>
 			</nav>
 		</footer>
