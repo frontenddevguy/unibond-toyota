@@ -217,7 +217,7 @@ form.validform .vf__notes h4 {
 }
 
 form.validform .vf__required label {
-	font-weight: bold;
+	/*font-weight: bold;*/
 }
 
 form.validform .vf__pagenavigation,

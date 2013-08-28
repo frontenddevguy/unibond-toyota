@@ -34,8 +34,12 @@
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 		
 		<!--[if lte IE 8]>
-			<link rel="stylesheet" href="css/ie8.css">
-		 <![endif]-->
+			<link rel="stylesheet" href="">
+		<![endif]-->
+			
+		<!--[if lte IE 9]>
+			<link rel="stylesheet" href="css/ie9.css">
+		<![endif]-->
 			
 			
 			
@@ -111,7 +115,7 @@
 			<h4>Two Big Prizes to be Won with Unibond at Screwfix</h4>
 			
 			<ul class="entry-info">
-				<li>Buy any Loctite, Nitromors, Solvite or UniBond product in <a href="http://www.screwfix.com/" onClick="trackOutboundLink(this, 'Outbound Links', 'http://www.screwfix.com/'); return false;">Screwfix</a></li>
+				<li>Buy any Loctite, Nitromors, Solvite or UniBond product in <a href="http://www.screwfix.com/search.do?fh_search=unibond+loctite+nitromors+solvite&fh_start_index=0&fh_sort_by=&fh_view_size=100&fhSearchParams=&customPrice=&priceFrom=&priceTo=&priceFilterOn=" onClick="trackOutboundLink(this, 'Outbound Links', 'http://www.screwfix.com/search.do?fh_search=unibond+loctite+nitromors+solvite&fh_start_index=0&fh_sort_by=&fh_view_size=100&fhSearchParams=&customPrice=&priceFrom=&priceTo=&priceFilterOn='); return false;">Screwfix</a></li>
 			
 				<li>Choose which vehicle you’d like a chance of winning</li>
 			</ul>
@@ -133,7 +137,7 @@
 		
 		
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="libraries/jquery.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>

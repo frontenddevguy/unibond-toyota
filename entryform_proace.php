@@ -128,8 +128,7 @@
 				
 			
 				<nav class="page-nav">
-					<a class="link-more_toyota" href="http://www.toyota.co.uk/cgi-bin/toyota/bv/generic_editorial.jsp?navRoot=toyota_1024_root&fullwidth=true&noLeftMenu=true&forceText=%3Cnone%3E&edname=Fleet-Range-and-Offers&id=Fleet-Range-and-Offers&zone=Zone+Fleet+News&sr=Mall" onClick="trackOutboundLink(this, 'Outbound Links', 'http://www.toyota.co.uk/cgi-bin/toyota/bv/generic_editorial.jsp?navRoot=toyota_1024_root&fullwidth=true&noLeftMenu=true&forceText=%3Cnone%3E&edname=Fleet-Range-and-Offers&id=Fleet-Range-and-Offers&zone=Zone+Fleet+News&sr=Mall'); return false;">MORE ABOUT THE
-	TOYOTA HILUX &amp; PROACE</a>
+					<a class="link-more_toyota" href="http://www.toyota.co.uk/cgi-bin/toyota/bv/frame_start.jsp?id=CC2-PROACE-landing" onClick="trackOutboundLink(this, 'Outbound Links', 'http://www.toyota.co.uk/cgi-bin/toyota/bv/frame_start.jsp?id=CC2-PROACE-landing'); return false;">MORE ABOUT TOYOTA PROACE</a>
 					
 
 					<a class="link-download" href="files/Henkel - UniBond Trade Catalogue - March 2011.pdf">
@@ -163,7 +162,7 @@
 		
 		
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>

@@ -24,10 +24,6 @@
         <!-- <link rel="stylesheet" href="css/normalize.css"> -->
         <link rel="stylesheet" href="css/main.css">
 		
-
-		
-		<!-- <link href="includes/form_hilux/css/structure.css" rel="stylesheet">
-		<link href="includes/form_hilux/css/form.css" rel="stylesheet"> -->
 		<link rel="stylesheet" href="css/form.css">
 		
 		
@@ -80,18 +76,19 @@
 					<img class="products" src="img/unibond-products.png" alt="Unibond products">
 			
 					<nav class="page-nav">
+						
+						<a class="link-home" href="index.php">HOME</a>
 
 						<a class="link-download" href="files/Henkel - UniBond Trade Catalogue - March 2011.pdf">
 							DOWNLOAD A <br />UNIBOND CATALOGUE
 							<img class="icon" src="img/icon_pdf.png">
 						</a>
 			
-						<a class="link-more_unibond" href="about.php">MORE ABOUT UNIBOND</a>
-			
-						<a class="link-screwfix" href="http://www.screwfix.com/jsp/tradeCounter/tradeCounterPage.jsp" onClick="trackOutboundLink(this, 'Outbound Links', 'http://www.screwfix.com/jsp/tradeCounter/tradeCounterPage.jsp'); return false;">
+						<a class="link-screwfix" href="http://www.screwfix.com/search.do?fh_search=unibond+loctite+nitromors+solvite&fh_start_index=0&fh_sort_by=&fh_view_size=100&fhSearchParams=&customPrice=&priceFrom=&priceTo=&priceFilterOn=" onClick="trackOutboundLink(this, 'Outbound Links', 'http://www.screwfix.com/search.do?fh_search=unibond+loctite+nitromors+solvite&fh_start_index=0&fh_sort_by=&fh_view_size=100&fhSearchParams=&customPrice=&priceFrom=&priceTo=&priceFilterOn='); return false;">
 							FIND YOUR LOCAL SCREWFIX STORE
 							<img class="icon" src="img/icon_uk.png">
 						</a>
+						
 
 					</nav>
 

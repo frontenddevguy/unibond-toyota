@@ -1,7 +1,7 @@
 <?php
 require_once("libraries/ValidForm/class.validform.php");
 
-$objForm = new ValidForm("contactForm", "Required fields are printed in bold.");
+$objForm = new ValidForm("contactForm", "Please complete all fields.");
 //*** A 'name' field, field type is string.
 $objForm->addField("full_name", "Full name", VFORM_STRING, 
     array(
@@ -19,7 +19,7 @@ $objForm->addField("full_name", "Full name", VFORM_STRING,
 $objForm->addField("your_trade", "Your trade", VFORM_STRING, 
     array(
         "maxLength" => 255, 
-        // "required" => TRUE
+        "required" => TRUE
     ), 
     array(
         "maxLength" => "Your input is too long. A maximum of %s characters is OK.", 
@@ -32,7 +32,7 @@ $objForm->addField("your_trade", "Your trade", VFORM_STRING,
 $objForm->addField("business_name", "Business name", VFORM_STRING, 
     array(
         "maxLength" => 255, 
-        // "required" => TRUE
+        "required" => TRUE
     ), 
     array(
         "maxLength" => "Your input is too long. A maximum of %s characters is OK.", 
@@ -45,7 +45,7 @@ $objForm->addField("business_name", "Business name", VFORM_STRING,
 $objForm->addField("business_type", "Business type (e.g. builder, plumber)", VFORM_STRING, 
     array(
         "maxLength" => 255, 
-        // "required" => TRUE
+        "required" => TRUE
     ), 
     array(
         "maxLength" => "Your input is too long. A maximum of %s characters is OK.", 
@@ -68,11 +68,14 @@ $objForm->addField("email", "Email address", VFORM_EMAIL,
 );
 
 //*** A numeric field, field type is email.
-$objForm->addField("mobile", "Mobile", VFORM_NUMERIC, 
+$objForm->addField("mobile", "Mobile", VFORM_CUSTOM, 
     array(
-        "maxLength" => 20, 
-        "required" => TRUE
-    ), 
+        "maxLength" => 30, 
+        "required" => TRUE,
+    
+	// The custom regular expression for validation
+	     // "validation" => "((?:[a-z][a-z0-9_]*\+))"
+	), 
     array(
         "maxLength" => "Your number is too long. A maximum of %s characters is OK.", 
         "required" => "This field is required.", 
@@ -84,7 +87,7 @@ $objForm->addField("mobile", "Mobile", VFORM_NUMERIC,
 $objForm->addField("house_name_number", "House name / number", VFORM_STRING, 
     array(
         "maxLength" => 255, 
-        // "required" => TRUE
+        "required" => TRUE
     ), 
     array(
         "maxLength" => "Your input is too long. A maximum of %s characters is OK.", 
@@ -97,7 +100,7 @@ $objForm->addField("house_name_number", "House name / number", VFORM_STRING,
 $objForm->addField("street", "Street", VFORM_STRING, 
     array(
         "maxLength" => 255, 
-        // "required" => TRUE
+        "required" => TRUE
     ), 
     array(
         "maxLength" => "Your input is too long. A maximum of %s characters is OK.", 
@@ -110,7 +113,7 @@ $objForm->addField("street", "Street", VFORM_STRING,
 $objForm->addField("street_cont", "Street (cont.)", VFORM_STRING, 
     array(
         "maxLength" => 255, 
-        // "required" => TRUE
+        "required" => TRUE
     ), 
     array(
         "maxLength" => "Your input is too long. A maximum of %s characters is OK.", 
@@ -123,7 +126,7 @@ $objForm->addField("street_cont", "Street (cont.)", VFORM_STRING,
 $objForm->addField("town", "Town", VFORM_STRING, 
     array(
         "maxLength" => 255, 
-        // "required" => TRUE
+        "required" => TRUE
     ), 
     array(
         "maxLength" => "Your input is too long. A maximum of %s characters is OK.", 
@@ -175,7 +178,7 @@ $objForm->addField("screwfix_invoice_number", "Screwfix invoice number", VFORM_S
 $objForm->addField("screwfix_store", "Screwfix store", VFORM_STRING, 
     array(
         "maxLength" => 50, 
-        // "required" => TRUE
+        "required" => TRUE
     ), 
     array(
         "maxLength" => "Your store name is too long. A maximum of %s characters is OK.", 
@@ -227,7 +230,27 @@ $strOutput = "";
 if ($objForm->isSubmitted() && $objForm->isValid()) {
 
 
-	// MySQL connect here
+	
+	//the example of inserting data with variable from HTML form
+	//input.php
+	mysql_connect("localhost","root","admin");//database connection
+	mysql_select_db("unibond-toyota_competition");
+
+	//inserting data order
+	$order = "INSERT INTO data_entries
+				(full_name, your_trade)
+				VALUES
+				('$full_name',
+				'$your_trade')";
+
+	//declare in the order variable
+	$result = mysql_query($user_info);	//order executes
+	if($result){
+		echo("<br>Input data is succeed");
+	} else{
+		echo("<br>Input data is fail");
+	}
+	
         
     //*** Set the output to a friendly thank you note.
 	header("Location: thankyou.php",303);
