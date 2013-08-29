@@ -10,7 +10,7 @@
 
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]>		<html class="no-js"><![endif]-->
 
     <head>
         <meta charset="utf-8">
@@ -21,24 +21,20 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+        
         <link rel="stylesheet" href="css/main.css">
 		
-
-		
-		<!-- <link href="includes/form_hilux/css/structure.css" rel="stylesheet">
-		<link href="includes/form_hilux/css/form.css" rel="stylesheet"> -->
-		<link rel="stylesheet" href="css/form.css">
 		
 		
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 		
 		<!--[if lte IE 8]>
-			<link rel="stylesheet" href="">
+			<link rel="stylesheet" href="css/ie8.css">
 		<![endif]-->
 			
 		<!--[if lte IE 9]>
 			<link rel="stylesheet" href="css/ie9.css">
+			<link rel="stylesheet" href="libraries/jquery.textshadow.css">
 		<![endif]-->
 			
 			
@@ -137,10 +133,23 @@
 		
 		
 
-        <script src="libraries/jquery.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+		    <script>window.jQuery || document.write('<script src="libraries/jquery.js">\x3C/script>')</script>
+		
+		<!--[if lte IE 9]><script src="libraries/jquery.textshadow.js"></script><![endif]-->
+		
+		
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+		
+		
+		
+
+		
+		
+		
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 		<script type="text/javascript">

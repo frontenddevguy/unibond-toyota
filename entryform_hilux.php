@@ -13,7 +13,7 @@
 
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <!-- <html class="no-js"> --> <!--<![endif]-->
 
     <head>
         <meta charset="utf-8">
@@ -23,20 +23,34 @@
         <meta name="viewport" content="width=device-width">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-        <link rel="stylesheet" href="css/main.css">
 		
-		<link type="text/css" rel="stylesheet" href="css/validform.css" />
+
 
 		<script type="text/javascript" src="libraries/jquery.js"></script>
+		
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+		
 		<script type="text/javascript" src="libraries/validform.js"></script>
 		
 		
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        
+		
+        <link rel="stylesheet" href="css/main.css">
+		<link type="text/css" rel="stylesheet" href="css/validform.css" />
+		
+		
+
 		
 		<!--[if lte IE 8]>
-			<link rel="stylesheet" href="css/ie8.css">
-		 <![endif]-->
+			
+			<script src="libraries/respond.min.js"></script>
+		<![endif]-->
+			
+		<!--[if lte IE 9]>
+			<link rel="stylesheet" href="css/ie9.css">
+			<link rel="stylesheet" href="libraries/jquery.textshadow.css">
+		<![endif]-->
+
 			
 			
 			
@@ -126,7 +140,7 @@
 					<a class="link-more_toyota" href="http://www.toyota.co.uk/cgi-bin/toyota/bv/frame_start.jsp?id=CC2-Hilux-landing" onClick="trackOutboundLink(this, 'Outbound Links', 'http://www.toyota.co.uk/cgi-bin/toyota/bv/frame_start.jsp?id=CC2-Hilux-landing'); return false;">MORE ABOUT TOYOTA HILUX</a>
 					
 
-					<a class="link-download" href="files/Henkel - UniBond Trade Catalogue - March 2011.pdf">
+					<a class="link-download" href="files/Henkel%20-%20UniBond%20Trade%20Catalogue%20-%20March%202011.pdf">
 						DOWNLOAD A <br />UNIBOND CATALOGUE
 						<img class="icon" src="img/icon_pdf.png">
 					</a>
@@ -163,7 +177,10 @@
 		
 
 
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+		
+		<!--[if lte IE 9]><script src="libraries/jquery.textshadow.js"></script><![endif]-->
+
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 

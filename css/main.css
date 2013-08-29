@@ -126,6 +126,8 @@ html, body {height: 100%;}
 	background: linear-gradient(135deg,  #6b0303 0%,#cf0506 32%,#cf0506 100%); /* W3C */
 
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b0303', endColorstr='#cf0506',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+	
+	behavior: url(includes/PIE-1.0.0/PIE.htc);
 }
 
 section {
@@ -168,7 +170,7 @@ a {
 .page-nav {
 	clear: both;
 	padding-left: 5%;
-	margin: 30px 70px 0 0;
+	margin: 60px 70px 0 0;
 	width: 70%;
 }
 
@@ -191,31 +193,24 @@ a {
 	
 	/*font-size: 15px;*/
 	margin: 0 20px 20px 0;
-	padding: 8px 50px 4px 20px;
+	padding: 10px 50px 2px 20px;
+	
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
 	width: 80%;
 	
-	/* For IE 8 */
-	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='#102530')";
-	/* For IE 5.5 - 7 */
-	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='#102530');
-	filter:DropShadow(Color=#102530, OffX=0, OffY=3);
-	zoom: 1;
-	}
+	behavior: url(includes/PIE-1.0.0/PIE.htc);
 }
 
 
 a.link-home {
 	background: #fff;
 	color: #CF0506;
-	
 	text-shadow: none;
 }
 
 a.link-purchase {
 	background-color: #ffca04;
 	float: left;
-/*	margin: -77px 0 0 70%;*/
 }
 
 a.link-more_toyota {
@@ -239,7 +234,7 @@ a.link-more_toyota {
 
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aeef', endColorstr='#006c93',GradientType=1 ); /* IE6-8 */
 
-	
+	behavior: url(includes/PIE-1.0.0/PIE.htc);
 }
 
 a.link-download {
@@ -268,6 +263,8 @@ a.link-download {
 	background-position: 135px -20px ;
 	padding-right: 40px;
 	width: 110px;*/
+	
+	behavior: url(includes/PIE-1.0.0/PIE.htc);
 }
 
 a.link-download .icon {
@@ -277,7 +274,8 @@ a.link-download .icon {
 }
 
 a.link-more_unibond {
-	line-height: 41px;
+	/*line-height: 41px;*/
+	line-height: 17px;
 	
 	background: #ffcb05; /* Old browsers */
 
@@ -298,6 +296,8 @@ a.link-more_unibond {
 	background: linear-gradient(to right,  #ffcb05 0%,#937503 100%); /* W3C */
 
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcb05', endColorstr='#937503',GradientType=1 ); /* IE6-8 */
+	
+	behavior: url(includes/PIE-1.0.0/PIE.htc);
 
 	
 }
@@ -328,6 +328,8 @@ a.link-screwfix {
 	background-position: center 135px;
 	padding-right: 40px;
 	width: 110px;*/
+	
+	behavior: url(includes/PIE-1.0.0/PIE.htc);
 
 }
 
@@ -387,6 +389,8 @@ section {
 	background: linear-gradient(135deg,  #ffffff 0%,#9d9b9b 100%); /* W3C */
 
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edeeee', endColorstr='#9d9b9b',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+	
+	behavior: url(includes/PIE-1.0.0/PIE.htc);
 }
 
 a .vehicle-choice:hover {
@@ -410,6 +414,8 @@ a .vehicle-choice:hover {
 	background: linear-gradient(135deg,  #edeeee 0%,#9d9b9b 100%); /* W3C */
 
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edeeee', endColorstr='#9d9b9b',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+	
+	behavior: url(includes/PIE-1.0.0/PIE.htc);
 }
 
 
@@ -435,6 +441,8 @@ section h4 {
 	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
 	text-align: center;
 	text-shadow: 2px 2px 0px rgba(34, 31, 31, 1);
+	
+	behavior: url(includes/PIE-1.0.0/PIE.htc);
 }
 
 section h3 {
@@ -466,6 +474,8 @@ section h4 {
 	-webkit-border-top-left-radius: 50px;
 	-moz-border-radius-topleft: 50px;
 	border-top-left-radius: 50px;
+	
+	behavior: url(includes/PIE-1.0.0/PIE.htc);
 }
 
 .win-hilux h2 .win {
@@ -556,6 +566,8 @@ ul.entry-info a {
         -ms-transform: rotate(355deg);  /* IE 9 */
          -o-transform: rotate(355deg);  /* Opera 10.50-12.00 */
             transform: rotate(355deg);  /* Firefox 16+, IE 10+, Opera 12.10+ */
+			
+			behavior: url(includes/PIE-1.0.0/PIE.htc);
 }
 
 
@@ -604,6 +616,8 @@ ul.entry-info a {
 	box-shadow:         5px 5px 13px rgba(50, 50, 50, 0.75);
 
 	text-transform: none;
+	
+	behavior: url(includes/PIE-1.0.0/PIE.htc);
 }
 
 .validform_wrapper h2 {
@@ -643,6 +657,8 @@ ul.entry-info a {
 	font-size: 100%;
 	
 	padding: 2px 0;
+	
+	behavior: url(includes/PIE-1.0.0/PIE.htc);
 }
 
 .validform_wrapper label {
@@ -695,8 +711,10 @@ fieldset div {
 		font-size: 50px;
 		left: -11px;
 		position: absolute;
-		text-shadow: -3px 4px 0 #57585B;
+		text-shadow: 0 0 7px #333;
 		top: -34px;
+		
+		behavior: url(includes/PIE-1.0.0/PIE.htc);
 	}
 	
 	.or {
@@ -707,12 +725,16 @@ fieldset div {
 		text-shadow: 2px 2px 5px rgba(34, 31, 31, 1);
 	  	bottom: -50px;
 		z-index: 10;
+		
+		behavior: url(includes/PIE-1.0.0/PIE.htc);
 	}
 	
 	section h3, 
 	section h4 {
 		font-size: 25px;
-		text-shadow: 2px 2px 0px rgba(34, 31, 31, 1);
+		text-shadow: 2px 2px 4px rgba(34, 31, 31, 1);
+		
+		behavior: url(includes/PIE-1.0.0/PIE.htc);
 	}
 	
 	.win-hilux {
@@ -794,6 +816,8 @@ fieldset div {
 		padding: 0 30px;
 	  	text-align: center;
 		text-shadow: 4px 4px 0 #221F1F;
+		
+		behavior: url(includes/PIE-1.0.0/PIE.htc);
 	}
 	
 	.closed .rotate {
@@ -875,7 +899,6 @@ fieldset div {
 		border: 14px solid #fff;
 		clear: both;
 		height: 50px;
-		/*height: 34px;*/
 	}
 	
 	footer nav {
@@ -931,10 +954,6 @@ fieldset div {
 	  	line-height: 65px;
 	}
 	
-	.thankyou section nav {
-		/*margin: 50px 0 60px 20px;*/
-	}	
-	
 	.vehicle-choice {
 		height: 317px;
 		width: 216px;
@@ -948,18 +967,24 @@ fieldset div {
 		-webkit-border-top-left-radius: 30px;
 		-moz-border-radius-topleft: 30px;
 		border-top-left-radius: 30px;
+		
+		behavior: url(includes/PIE-1.0.0/PIE.htc);
 	}
 
 	h2 .win {
 		font-size: 86px;
 		margin-top: -10px;
 		text-shadow: -3px 4px 0px rgba(255, 255, 255, 1);
+		
+		behavior: url(includes/PIE-1.0.0/PIE.htc);
 	}
 
 	h2 .vehicle-name {
 		font-size: 22px;
 		margin-top: -18px;
 		text-shadow: -3px 4px 0 #FFFFFF;
+		
+		behavior: url(includes/PIE-1.0.0/PIE.htc);
 	}
 	
 	.vehicle-choice h3 {
@@ -986,7 +1011,6 @@ fieldset div {
 	}
 	
 	.page-nav {
-		/*width: 56%;*/
 		width: 38%;
 	}
 	
@@ -1028,7 +1052,6 @@ fieldset div {
 @media only screen and (min-width: 640px) {
 	.validform_wrapper {
 		width: 80%;
-		/*margin: 30px 0 30px 5%;*/
 	}
 	
 	.entry-form .vehicle-choice.alternative {
@@ -1054,7 +1077,7 @@ fieldset div {
 				-ms-transform-origin: top left; /* IE 9 */
 				-webkit-transform-origin: top left; /* Safari and Chrome */
 				
-				
+			behavior: url(includes/PIE-1.0.0/PIE.htc);	
 				
 				 
 	}
@@ -1072,6 +1095,8 @@ fieldset div {
 	        -ms-transform: rotate(10deg);  /* IE 9 */
 	         -o-transform: rotate(10deg);  /* Opera 10.50-12.00 */
 	            transform: rotate(10deg);  /* Firefox 16+, IE 10+, Opera 12.10+ */
+				
+				behavior: url(includes/PIE-1.0.0/PIE.htc);
 	}
 	
 
@@ -1085,7 +1110,6 @@ fieldset div {
 		font-size: 68px;
 		left: -37px;
 		position: absolute;
-		text-shadow: -3px 4px 0 #57585B;
 		top: -49px;
 	}
 	
@@ -1097,12 +1121,16 @@ fieldset div {
 	h2 .win {
 		font-size: 114px;
 		text-shadow: -3px 4px 0px rgba(255, 255, 255, 1);
+		
+		behavior: url(includes/PIE-1.0.0/PIE.htc);
 	}
 
 	h2 .vehicle-name {
 		font-size: 32px;
 		margin-top: -30px;
 		text-shadow: -1px 2px 0 #FFFFFF;
+		
+		behavior: url(includes/PIE-1.0.0/PIE.htc);
 	}
 	
 	section h3, 
@@ -1114,9 +1142,9 @@ fieldset div {
 		float: left;
 	  	font-size: 32px;
 	  	margin: 0 0 0 80px;
-	  	/*padding: 42px 0 0 0;*/
 	  	text-shadow: 4px 4px 0 #221F1F;
-	  	/*width: 600px;*/
+		
+		behavior: url(includes/PIE-1.0.0/PIE.htc);
 	}
 
 	.win-hilux {
@@ -1130,13 +1158,11 @@ fieldset div {
 	
 	.page-nav {
 		width: 95%;
-		/*margin-left: 38px;*/
 	}
 	
 	.page-nav a {
-		/*font-size: 13px;*/
 		font-size: 12px;
-		padding: 8px 40px 4px 20px;
+		padding: 10px 40px 2px 20px;
 		width: 123px;
 	}
 	
@@ -1201,7 +1227,9 @@ fieldset div {
 	         -o-transform: rotate(10deg);  /* Opera 10.50-12.00 */
 	            transform: rotate(10deg);  /* Firefox 16+, IE 10+, Opera 12.10+ */
 		
-				transform-origin: top left;  
+				transform-origin: top left; 
+				
+				behavior: url(includes/PIE-1.0.0/PIE.htc); 
 	}
 	
 
@@ -1243,13 +1271,10 @@ fieldset div {
 	
 	h2 .win {
 		font-size: 140px;
-		/*margin-left: -40px;*/
 	}
 	
 	h2 .vehicle-name {
 		font-size: 37px;
-		/*margin: -25px 0 0 50px;*/
-		/*text-shadow: -3px 4px 0 #FFFFFF;*/
 	}
 	
 	.its {
@@ -1275,9 +1300,7 @@ fieldset div {
 	}
 	
 	.page-nav a {
-		/*font-size: 15px;*/
 		margin-right: 40px;
-		padding: 8px 8px 4px 24px;
 		width: 150px;
 	}
 	
@@ -1348,15 +1371,16 @@ fieldset div {
 	}
 	
 	.entry-form .rotate .vehicle-choice h2 .win {
-		/*font-size: 86px;*/
 		margin-top: -20px;
 		text-shadow: -3px 4px 0px rgba(255, 255, 255, 1);
+		
+		behavior: url(includes/PIE-1.0.0/PIE.htc);
 	}
 
 	.entry-form .rotate .vehicle-choice h2 .vehicle-name {
-		/*font-size: 22px;
-		margin-top: -18px;*/
 		text-shadow: -3px 4px 0 #FFFFFF;
+		
+		behavior: url(includes/PIE-1.0.0/PIE.htc);
 	}
 }
 
@@ -1374,7 +1398,6 @@ fieldset div {
 	}
 	
 	.entry-form .rotate .vehicle-choice {
-		/*height: 540px;*/
 		height: auto;
 		width: 337px;
 	    
@@ -1387,18 +1410,13 @@ fieldset div {
 
 
 
-footer {
-  /*position:  absolute;
-  bottom:  0;
-  width:  100%;*/
-  
+footer {  
   background-color: #fff;
   float: left;
   width: 100%;
 }
 
 footer h2 {
-	/*background: url('../img/logo_unibond.gif') no-repeat;*/
 	float: left;
 	line-height: 0;
 	text-indent: -9999px;
@@ -1435,6 +1453,8 @@ footer h2 {
 	-webkit-border-top-left-radius: 30px;
 	-moz-border-radius-topleft: 30px;
 	border-top-left-radius: 30px;
+	
+	behavior: url(includes/PIE-1.0.0/PIE.htc);
 }
 
 .thankyou .its {
@@ -1443,18 +1463,24 @@ footer h2 {
 	position: absolute;
 	text-shadow: -3px 4px 0 #57585B;
 	top: -34px;
+	
+	behavior: url(includes/PIE-1.0.0/PIE.htc);
 }
 
 .thankyou h2 .win {
 	font-size: 86px;
 	margin-top: -10px;
 	text-shadow: -3px 4px 0px rgba(255, 255, 255, 1);
+	
+	behavior: url(includes/PIE-1.0.0/PIE.htc);
 }
 
 .thankyou h2 .vehicle-name {
 	font-size: 22px;
 	margin-top: -18px;
 	text-shadow: -3px 4px 0 #FFFFFF;
+	
+	behavior: url(includes/PIE-1.0.0/PIE.htc);
 }
 
 .thankyou .win-hilux {
@@ -1479,15 +1505,11 @@ footer h2 {
 
 .closed-banner h3 {
   	background-color: #ED1C24;
-  	/*font-size: 72px;*/
-  	/*height: 100px;*/
-  	/*left: 86px;*/
 	left: 10%;
   	position: absolute;
   	text-transform: uppercase;
   	top: 361px;
 	width: 80%;
-/*  	width: 725px;*/
 }
 
 .closed h4 {

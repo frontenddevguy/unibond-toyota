@@ -113,7 +113,7 @@ $objForm->addField("street", "Street", VFORM_STRING,
 $objForm->addField("street_cont", "Street (cont.)", VFORM_STRING, 
     array(
         "maxLength" => 255, 
-        "required" => TRUE
+        // "required" => TRUE
     ), 
     array(
         "maxLength" => "Your input is too long. A maximum of %s characters is OK.", 

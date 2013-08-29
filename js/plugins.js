@@ -22,3 +22,12 @@
 }());
 
 // Place any jQuery/helper plugins in here.
+
+
+// Text Shadow in IE 
+
+// $(document).ready(function(){
+	if (!Modernizr.textshadow) {
+	    $('h2, h3, .or, .page-nav a').textshadow();
+	  }
+// })

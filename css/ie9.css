@@ -7,21 +7,25 @@
 
 
 
-section h3, 
-section h4 {
-	color: #00539D;
-	text-shadow: none;
-}
+	/* IE Specific */
 
-section h4 {
-	color: #fff;
-}
+/*	section h3, 
+	section h4,
+	.or,
+	.alternative .or {
+		color: #00539D;
+		text-shadow: none;
+	}
 
-.its {
-	color: #00539D;
-	text-shadow: none;
-}
+	section h4 {
+		color: #fff;
+	}
 
-.page-nav a {
-	color: #000;
-}
+	.its {
+		color: #00539D;
+		text-shadow: none;
+	}
+
+	.page-nav a {
+		color: #000;
+	}*/
