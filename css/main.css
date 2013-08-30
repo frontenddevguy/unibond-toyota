@@ -174,6 +174,14 @@ a {
 	width: 70%;
 }
 
+.landing-page .page-nav {
+	margin: 40px 0 40px 0;
+}
+
+.landing-page h4 {
+	float: left;
+}
+
 .page-nav a {
 	color: #fff;
 	font-family: Arial, Helvetica, sans-serif;
@@ -232,8 +240,6 @@ a.link-more_toyota {
 
 	background: linear-gradient(to right,  #00aeef 0%,#006c93 100%); /* W3C */
 
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aeef', endColorstr='#006c93',GradientType=1 ); /* IE6-8 */
-
 	behavior: url(includes/PIE-1.0.0/PIE.htc);
 }
 
@@ -255,14 +261,6 @@ a.link-download {
 	background: -ms-linear-gradient(left,  #ec008c 0%,#880050 100%); /* IE10+ */
 
 	background: linear-gradient(to right,  #ec008c 0%,#880050 100%); /* W3C */
-
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec008c', endColorstr='#880050',GradientType=1 ); /* IE6-8 */
-
-/*	background-image: url('../img/icon_pdf.png');
-	background-repeat: no-repeat;
-	background-position: 135px -20px ;
-	padding-right: 40px;
-	width: 110px;*/
 	
 	behavior: url(includes/PIE-1.0.0/PIE.htc);
 }
@@ -294,8 +292,6 @@ a.link-more_unibond {
 	background: -ms-linear-gradient(left,  #ffcb05 0%,#937503 100%); /* IE10+ */
 
 	background: linear-gradient(to right,  #ffcb05 0%,#937503 100%); /* W3C */
-
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcb05', endColorstr='#937503',GradientType=1 ); /* IE6-8 */
 	
 	behavior: url(includes/PIE-1.0.0/PIE.htc);
 
@@ -321,13 +317,6 @@ a.link-screwfix {
 
 	background: linear-gradient(to right,  #8dc63f 0%,#587b27 100%); /* W3C */
 
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8dc63f', endColorstr='#587b27',GradientType=1 ); /* IE6-8 */
-
-/*	background-image: url('../img/icon_uk.png');
-	background-repeat: no-repeat;
-	background-position: center 135px;
-	padding-right: 40px;
-	width: 110px;*/
 	
 	behavior: url(includes/PIE-1.0.0/PIE.htc);
 
@@ -369,12 +358,14 @@ section {
 	-webkit-box-shadow: 5px 5px 13px rgba(50, 50, 50, 0.75);
 	-moz-box-shadow:    5px 5px 13px rgba(50, 50, 50, 0.75);
 	box-shadow:         5px 5px 13px rgba(50, 50, 50, 0.75);
+	
+
 
 	background: #edeeee; /* Old browsers */
 
 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
 
-	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZWRlZWVlIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzlkOWI5YiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+/*	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZWRlZWVlIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzlkOWI5YiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);*/
 
 	background: -moz-linear-gradient(-45deg,  #ffffff 0%, #9d9b9b 100%); /* FF3.6+ */
 
@@ -387,10 +378,8 @@ section {
 	background: -ms-linear-gradient(-45deg,  #ffffff 0%,#9d9b9b 100%); /* IE10+ */
 
 	background: linear-gradient(135deg,  #ffffff 0%,#9d9b9b 100%); /* W3C */
-
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edeeee', endColorstr='#9d9b9b',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
 	
-	behavior: url(includes/PIE-1.0.0/PIE.htc);
+	/*behavior: url(includes/PIE-1.0.0/PIE.htc);*/
 }
 
 a .vehicle-choice:hover {
@@ -399,7 +388,7 @@ a .vehicle-choice:hover {
 
 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
 
-	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZWRlZWVlIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzlkOWI5YiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+/*	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZWRlZWVlIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzlkOWI5YiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);*/
 
 	background: -moz-linear-gradient(-45deg,  #edeeee 0%, #9d9b9b 100%); /* FF3.6+ */
 
@@ -412,8 +401,6 @@ a .vehicle-choice:hover {
 	background: -ms-linear-gradient(-45deg,  #edeeee 0%,#9d9b9b 100%); /* IE10+ */
 
 	background: linear-gradient(135deg,  #edeeee 0%,#9d9b9b 100%); /* W3C */
-
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edeeee', endColorstr='#9d9b9b',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
 	
 	behavior: url(includes/PIE-1.0.0/PIE.htc);
 }
@@ -488,21 +475,33 @@ section h4 {
 }
 
 
-ul.entry-info {
+.entry-info {
 	clear: both;
 	color: #fff;
 	float: left;
 	font-family: Arial, Helvetica, sans-serif;
+	margin: 40px;
 	text-transform: none;
 }
 
-ul.entry-info li {
+.entry-info p,
+.entry-info ul {
+	display: inline-block;
+	line-height: 20px;
+	margin: 0;
+}
+
+.entry-info ul {
+	
+}
+
+.entry-info li {
 	float: left;
 	list-style: outside;
 	padding: 0 20px 5px 0;
 }
 
-ul.entry-info a {
+.entry-info a {
 	color: #fff;
 	text-decoration: underline;
 }
@@ -527,6 +526,7 @@ ul.entry-info a {
 
 .entry-form .alternative {
 	margin: 20px;
+	padding-bottom: 184px;
 }
 
 .entry-form .alternative img {
@@ -555,12 +555,22 @@ ul.entry-info a {
 	top: 7px;
 }
 
-.entry-form .win-hilux .vehicle {
-    width: 100%;
+.entry-form .vehicle-choice .vehicle {
+	bottom: 46px;
+    left: -21px;
 	margin-left: -7px;
+	position: absolute;
+	width: 100%;
+}
+
+.entry-form .win-proace .vehicle {
+	bottom: 24px;
 }
 
 .alternative img.vehicle {
+	bottom: 10px;
+	position: absolute;
+	
     -webkit-transform: rotate(355deg);  /* Chrome, Safari 3.1+ */
        -moz-transform: rotate(355deg);  /* Firefox 3.5-15 */
         -ms-transform: rotate(355deg);  /* IE 9 */
@@ -568,6 +578,16 @@ ul.entry-info a {
             transform: rotate(355deg);  /* Firefox 16+, IE 10+, Opera 12.10+ */
 			
 			behavior: url(includes/PIE-1.0.0/PIE.htc);
+}
+
+.entry-form .win-hilux.alternative img {
+	bottom: 18px;
+	left: -6px;
+}
+
+.entry-form .win-proace.alternative img {
+	bottom: 8px;
+	left: -6px;
 }
 
 
@@ -608,8 +628,6 @@ ul.entry-info a {
 	background: -ms-linear-gradient(-45deg,  #ffffff 0%,#a5a3a3 100%); /* IE10+ */
 
 	background: linear-gradient(135deg,  #ffffff 0%,#a5a3a3 100%); /* W3C */
-
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#a5a3a3',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
 
 	-webkit-box-shadow: 5px 5px 13px rgba(50, 50, 50, 0.75);
 	-moz-box-shadow:    5px 5px 13px rgba(50, 50, 50, 0.75);
@@ -699,7 +717,7 @@ fieldset div {
 	
 	.vehicle-choice .vehicle {
 		display: block;
-		margin: 0 auto;
+		position: absolute;
 		width: 90%;
 	}
 	
@@ -735,6 +753,11 @@ fieldset div {
 		text-shadow: 2px 2px 4px rgba(34, 31, 31, 1);
 		
 		behavior: url(includes/PIE-1.0.0/PIE.htc);
+	}
+	
+	.vehicle-choice h3 {
+		position: absolute;
+		bottom: 10px;
 	}
 	
 	.win-hilux {
@@ -801,6 +824,7 @@ fieldset div {
 	
 	.vehicle-choice {
 		float: left;
+		height: 400px;
 		margin-left: 5%;
 	}
 
@@ -830,7 +854,11 @@ fieldset div {
 	}
 	
 	
+	/* Thank You */
 	
+	.thankyou .win-hilux img {
+		margin-top: 15px;
+	}
 	
 	/* T & C etc */
 
@@ -986,11 +1014,6 @@ fieldset div {
 		
 		behavior: url(includes/PIE-1.0.0/PIE.htc);
 	}
-	
-	.vehicle-choice h3 {
-		position: absolute;
-		bottom: 10px;
-	}
 
 	.win-hilux {
 		margin: 0 0 0 12px;
@@ -1120,9 +1143,6 @@ fieldset div {
 
 	h2 .win {
 		font-size: 114px;
-		text-shadow: -3px 4px 0px rgba(255, 255, 255, 1);
-		
-		behavior: url(includes/PIE-1.0.0/PIE.htc);
 	}
 
 	h2 .vehicle-name {
@@ -1151,7 +1171,7 @@ fieldset div {
 		margin: 0 0 0 12px;
 	}
 
-	ul.entry-info {
+	.entry-info {
 		font-size: 16px;
 		margin-left: 80px;
 	}
@@ -1399,8 +1419,8 @@ fieldset div {
 	
 	.entry-form .rotate .vehicle-choice {
 		height: auto;
+		padding-bottom: 200px;
 		width: 337px;
-	    
 	}
 }	
 
@@ -1450,9 +1470,9 @@ footer h2 {
 }
 
 .win-proace {
-	-webkit-border-top-left-radius: 30px;
-	-moz-border-radius-topleft: 30px;
-	border-top-left-radius: 30px;
+	-webkit-border-top-left-radius: 40px;
+	-moz-border-radius-topleft: 40px;
+	border-top-left-radius: 40px;
 	
 	behavior: url(includes/PIE-1.0.0/PIE.htc);
 }

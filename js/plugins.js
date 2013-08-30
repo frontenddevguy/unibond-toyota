@@ -28,6 +28,6 @@
 
 // $(document).ready(function(){
 	if (!Modernizr.textshadow) {
-	    $('h2, h3, .or, .page-nav a').textshadow();
+	    $('h2, h3, h4, .win, .vehicle-name, .or, .page-nav a').textshadow();
 	  }
 // })

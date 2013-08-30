@@ -113,7 +113,7 @@ $objForm->addField("street", "Street", VFORM_STRING,
 $objForm->addField("street_cont", "Street (cont.)", VFORM_STRING, 
     array(
         "maxLength" => 255, 
-        // "required" => TRUE
+        "required" => FALSE
     ), 
     array(
         "maxLength" => "Your input is too long. A maximum of %s characters is OK.", 
@@ -187,7 +187,17 @@ $objForm->addField("screwfix_store", "Screwfix store", VFORM_STRING,
     )
 );
 
-
+$objForm->addField("form_type", "form_type", VFORM_HIDDEN, 
+    array(
+        "maxLength" => 50, 
+        "required" => FALSE
+    ), 
+    array(
+        "maxLength" => "Your store name is too long. A maximum of %s characters is OK.", 
+        "required" => "This field is required.", 
+        "type" => "Enter only letters and spaces."
+    )
+);
 
 $objCheckboxes = $objForm->addField("further_info", "", VFORM_CHECK_LIST,
         array(
@@ -197,7 +207,7 @@ $objCheckboxes = $objForm->addField("further_info", "", VFORM_CHECK_LIST,
                 "required" => "Please tell us WHY!"
         )
 );
-        $objCheckboxes->addField("Henkel would like to send you further information about our range of trade products that might interest you. If you would prefer not to receive this information please tick here", "further_info_no_thanks");
+        $objCheckboxes->addField("Henkel would like to send you further information about our range of trade products that might interest you. If you would prefer not to receive this information please tick here", "No");
 		
 		
 		$objCheckboxes = $objForm->addField("share_info", "", VFORM_CHECK_LIST,
@@ -209,14 +219,8 @@ $objCheckboxes = $objForm->addField("further_info", "", VFORM_CHECK_LIST,
 		        )
 		);
 		        $objCheckboxes->addField("Henkel and Screwfix would like to share your information with other carefully selected companies whose products &amp; services we feel might interest you. If you would prefer not to receive this information please tick here
-", "share_info_no_thanks");
+", "No");
         
-
-
-
-
-
-
 //*** Setting the main alert.
 $objForm->setMainAlert("One or more errors occurred. Check the marked fields and try again.");
 //*** As this method already states, it sets the submit button's label.
@@ -228,37 +232,88 @@ $objForm->setSubmitLabel("Send");
 $strOutput = "";
 
 if ($objForm->isSubmitted() && $objForm->isValid()) {
-
-
 	
+$full_name = $_POST['full_name'];
+$your_trade = $_POST['your_trade'];
+$business_name = $_POST['business_name'];
+$business_type = $_POST['business_type'];
+$email = $_POST['email'];
+$mobile = $_POST['mobile'];
+$house_name_number = $_POST['house_name_number'];
+$street = $_POST['street'];
+$street_cont = $_POST['street_cont'];
+$town = $_POST['town'];
+$county = $_POST['county'];
+$postcode = $_POST['postcode'];
+$screwfix_invoice_number = $_POST['screwfix_invoice_number'];
+$screwfix_store = $_POST['screwfix_store'];
+$further_info_arr = $_POST['further_info'];
+$further_info = $further_info_arr[0];
+$share_info_arr = $_POST['share_info'];
+$share_info = $share_info_arr[0];
+
+if($share_info != 'No'){
+	$share_info = 'Yes';
+}
+
+if($further_info != 'No'){
+	$further_info = 'Yes';
+}
 	//the example of inserting data with variable from HTML form
 	//input.php
-	mysql_connect("localhost","root","admin");//database connection
-	mysql_select_db("unibond-toyota_competition");
-
-	//inserting data order
-	$order = "INSERT INTO data_entries
-				(full_name, your_trade)
-				VALUES
-				('$full_name',
-				'$your_trade')";
-
-	//declare in the order variable
-	$result = mysql_query($user_info);	//order executes
-	if($result){
-		echo("<br>Input data is succeed");
-	} else{
-		echo("<br>Input data is fail");
-	}
+	mysql_connect("mysql.positive-internet.com","unibscrw","4opera24");//database connection
+	mysql_select_db("unibscrw");
+    $email_arr = array();
 	
-        
-    //*** Set the output to a friendly thank you note.
+	$selectemail = "SELECT email from Form where email = '$email'";
+	//echo $selectemail."<br/>";
+	$selresult = mysql_query($selectemail);
+	while($row = mysql_fetch_assoc($selresult)){
+	$emailres = $row['email'];	
+	//echo "emailres:: ".$emailres."<br/>";
+	$email_arr[] = $emailres;
+	}
+	//print_r($email_arr);
+	$emailcount = count($email_arr);
+	//echo "emailcount:: " .$emailcount."<br>";
+	if($emailcount >= 15){
+		// do nothing
+		//$objForm->setMainAlert("You have already applied for this offer!");
+ 
+		//$strOutput = $objForm->toHtml();
+		header("Location: thankyou.php",303);
+	exit();
+	} else{
+	//inserting record in db
+	$addRecord = "INSERT INTO Form VALUES ('NULL',
+									   '$formtype',
+									   '$full_name',
+									   '$your_trade',
+									   '$business_name',
+									   '$business_type',
+									   '$email', 					               
+									   '$mobile',
+									   '$house_name_number',									   
+									   '$street',
+									   '$street_cont',
+									   '$town',
+									   '$county',
+									   '$postcode',
+									   '$screwfix_invoice_number',
+									   '$screwfix_store',
+									   '$further_info',
+									   '$share_info')";
+
+	$result = mysql_query($addRecord);	//sql query executes
+	//*** Set the output to a friendly thank you note.
 	header("Location: thankyou.php",303);
 	exit();
-} else {
+	}
+}
+	else {
     //*** The form has not been submitted or is not valid.
     $strOutput = $objForm->toHtml();
-}
+         }
 
 
 ?>

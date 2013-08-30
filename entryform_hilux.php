@@ -1,4 +1,9 @@
-<?php include 'includes/form.php'; ?>
+<?php 
+$formtype = "Hilux";
+include 'includes/form.php'; 
+
+?>
+
 
 
 <!DOCTYPE html>
@@ -42,7 +47,7 @@
 
 		
 		<!--[if lte IE 8]>
-			
+			<link rel="stylesheet" href="css/ie8.css">
 			<script src="libraries/respond.min.js"></script>
 		<![endif]-->
 			

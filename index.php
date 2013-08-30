@@ -30,7 +30,9 @@
 		
 		<!--[if lte IE 8]>
 			<link rel="stylesheet" href="css/ie8.css">
+			<script src="libraries/respond.min.js"></script>
 		<![endif]-->
+
 			
 		<!--[if lte IE 9]>
 			<link rel="stylesheet" href="css/ie9.css">
@@ -103,18 +105,25 @@
 					</a>
 				</div>
 			
-			<nav class="page-nav">
-				<a class="link-purchase" href="http://www.screwfix.com/search.do?fh_search=unibond+loctite+nitromors+solvite&fh_start_index=0&fh_sort_by=&fh_view_size=100&fhSearchParams=&customPrice=&priceFrom=&priceTo=&priceFilterOn=" onClick="trackOutboundLink(this, 'Outbound Links', 'http://www.screwfix.com/search.do?fh_search=unibond+loctite+nitromors+solvite&fh_start_index=0&fh_sort_by=&fh_view_size=100&fhSearchParams=&customPrice=&priceFrom=&priceTo=&priceFilterOn='); return false;">Purchase Qualifying Products</a>
-			</nav>
+
 			
 			
 			<h4>Two Big Prizes to be Won with Unibond at Screwfix</h4>
 			
-			<ul class="entry-info">
-				<li>Buy any Loctite, Nitromors, Solvite or UniBond product in <a href="http://www.screwfix.com/search.do?fh_search=unibond+loctite+nitromors+solvite&fh_start_index=0&fh_sort_by=&fh_view_size=100&fhSearchParams=&customPrice=&priceFrom=&priceTo=&priceFilterOn=" onClick="trackOutboundLink(this, 'Outbound Links', 'http://www.screwfix.com/search.do?fh_search=unibond+loctite+nitromors+solvite&fh_start_index=0&fh_sort_by=&fh_view_size=100&fhSearchParams=&customPrice=&priceFrom=&priceTo=&priceFilterOn='); return false;">Screwfix</a></li>
+			<div class="entry-info">
+				<p>All you need to do is</p>
+				<ul>
+					<li>Buy any Loctite, Nitromors, Solvite or UniBond product in <a href="http://www.screwfix.com/search.do?fh_search=unibond+loctite+nitromors+solvite&fh_start_index=0&fh_sort_by=&fh_view_size=100&fhSearchParams=&customPrice=&priceFrom=&priceTo=&priceFilterOn=" onClick="trackOutboundLink(this, 'Outbound Links', 'http://www.screwfix.com/search.do?fh_search=unibond+loctite+nitromors+solvite&fh_start_index=0&fh_sort_by=&fh_view_size=100&fhSearchParams=&customPrice=&priceFrom=&priceTo=&priceFilterOn='); return false;">Screwfix</a></li>
 			
-				<li>Choose which vehicle you’d like a chance of winning</li>
-			</ul>
+					<li>Choose which vehicle you’d like a chance of winning</li>
+				</ul>
+			</div>
+			
+			
+			
+			<nav class="page-nav">
+				<a class="link-purchase" href="http://www.screwfix.com/search.do?fh_search=unibond+loctite+nitromors+solvite&fh_start_index=0&fh_sort_by=&fh_view_size=100&fhSearchParams=&customPrice=&priceFrom=&priceTo=&priceFilterOn=" onClick="trackOutboundLink(this, 'Outbound Links', 'http://www.screwfix.com/search.do?fh_search=unibond+loctite+nitromors+solvite&fh_start_index=0&fh_sort_by=&fh_view_size=100&fhSearchParams=&customPrice=&priceFrom=&priceTo=&priceFilterOn='); return false;">Click to Purchase Qualifying Products</a>
+			</nav>
 			
 
 		</section>

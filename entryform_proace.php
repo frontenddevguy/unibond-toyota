@@ -1,4 +1,9 @@
-<?php include 'includes/form.php'; ?>
+<?php 
+$formtype = "Proace";
+include 'includes/form.php'; 
+
+?>
+
 
 
 <!DOCTYPE html>
@@ -24,20 +29,32 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="css/main.css">
-		
-		<link type="text/css" rel="stylesheet" href="css/validform.css" />
-		<!-- <link type="text/css" rel="stylesheet" href="css/form.css" /> -->
-
 		<script type="text/javascript" src="libraries/jquery.js"></script>
+		
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+		
 		<script type="text/javascript" src="libraries/validform.js"></script>
 		
 		
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        
+		
+        <link rel="stylesheet" href="css/main.css">
+		<link type="text/css" rel="stylesheet" href="css/validform.css" />
+		
+		
+
 		
 		<!--[if lte IE 8]>
 			<link rel="stylesheet" href="css/ie8.css">
-		 <![endif]-->
+			<script src="libraries/respond.min.js"></script>
+		<![endif]-->
+			
+		<!--[if lte IE 9]>
+			<link rel="stylesheet" href="css/ie9.css">
+			<link rel="stylesheet" href="libraries/jquery.textshadow.css">
+		<![endif]-->
+
+
 			
 			
 			
@@ -163,7 +180,8 @@
 		
 
         
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+		<!--[if lte IE 9]><script src="libraries/jquery.textshadow.js"></script><![endif]-->
+
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
@@ -181,5 +199,6 @@
 		  })();
  
 		</script>
+
     </body>
 </html>

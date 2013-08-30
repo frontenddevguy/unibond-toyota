@@ -4,28 +4,14 @@
    ========================================================================== */
 
 
+.vehicle-choice {
+	background: #c2c1c1;
+}
 
+a .vehicle-choice:hover {
+	background: #e8e8e8;
+}
 
-
-	/* IE Specific */
-
-/*	section h3, 
-	section h4,
-	.or,
-	.alternative .or {
-		color: #00539D;
-		text-shadow: none;
-	}
-
-	section h4 {
-		color: #fff;
-	}
-
-	.its {
-		color: #00539D;
-		text-shadow: none;
-	}
-
-	.page-nav a {
-		color: #000;
-	}*/
+.alternative .or {
+	right: 195px;
+}
