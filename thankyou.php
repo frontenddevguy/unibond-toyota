@@ -1,3 +1,4 @@
+<?php $carType = $_GET['carType']; ?>
 <!DOCTYPE html>
 
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -28,8 +29,7 @@
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 		
 		<!--[if lte IE 8]>
-			<link rel="stylesheet" href="css/ie8.css">
-			<script src="libraries/respond.min.js"></script>
+			<link rel="stylesheet" href="css/ie8_v2.css">
 		<![endif]-->
 
 			
@@ -63,11 +63,14 @@
         <![endif]-->
 
         
-		<header>
-			<a href="index.php"><h1>Unibond</h1></a>
-		</header>
+		
 		
 		<div id="wrap">
+			
+			<header class="main-header">
+				<a href="index.php"><h1>Unibond</h1></a>
+			</header>
+			
 			<section class="gradient">
 			
 				<div class="rotate">
@@ -103,7 +106,18 @@
 					<!-- </a> -->
 				</div>
 				
-				<h2 class="thankyou-header">Thank You for Your Entry</h2>
+				
+				<!--[if lte IE 8]>
+					<img class="thankyou-img" src="img/ie_thanks-page.png" />
+				<![endif]-->
+				
+				
+				<h2 class="thankyou-header">Thank You for Your Entry<span class="choice-message">You are entered in the draw to win a Toyota <?php echo strtoupper($carType);?></span></h2>
+				
+				
+				
+				
+				
 			
 				<nav class="page-nav">
 					<a class="link-more_toyota" href="http://www.toyota.co.uk/cgi-bin/toyota/bv/generic_editorial.jsp?navRoot=toyota_1024_root&fullwidth=true&noLeftMenu=true&forceText=%3Cnone%3E&edname=Fleet-Range-and-Offers&id=Fleet-Range-and-Offers&zone=Zone+Fleet+News&sr=Mall" onClick="trackOutboundLink(this, 'Outbound Links', 'http://www.toyota.co.uk/cgi-bin/toyota/bv/generic_editorial.jsp?navRoot=toyota_1024_root&fullwidth=true&noLeftMenu=true&forceText=%3Cnone%3E&edname=Fleet-Range-and-Offers&id=Fleet-Range-and-Offers&zone=Zone+Fleet+News&sr=Mall'); return false;">MORE ABOUT THE

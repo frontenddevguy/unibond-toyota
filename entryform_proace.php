@@ -42,11 +42,14 @@ include 'includes/form.php';
 		<link type="text/css" rel="stylesheet" href="css/validform.css" />
 		
 		
-
+		
+		<!--[if lte IE 7]>
+			
+		<![endif]-->
 		
 		<!--[if lte IE 8]>
-			<link rel="stylesheet" href="css/ie8.css">
-			<script src="libraries/respond.min.js"></script>
+			<link rel="stylesheet" href="css/ie8_v2.css">
+			
 		<![endif]-->
 			
 		<!--[if lte IE 9]>
@@ -80,11 +83,14 @@ include 'includes/form.php';
         <![endif]-->
 
         
-		<header>
-			<a href="index.php"><h1>Unibond</h1></a>
-		</header>
+		
 		
 		<div id="wrap">
+			
+			<header class="main-header">
+				<a href="index.php"><h1>Unibond</h1></a>
+			</header>
+			
 			<section>
 			
 				<div class="rotate">
@@ -112,25 +118,31 @@ include 'includes/form.php';
 
 
 						</div>
+						
+						<!--[if lte IE 8]>
+							<img class="ie_img" src="img/ie7_proace.png" alt="">
+						<![endif]-->
 					
 				</div>
 				
 				
-				<div class="validform_wrapper">
+				<div class="validform_wrapper proace">
 					<header>
 						<h2>Entry Form</h2>
 						<h3>Your details</h3>
 					</header>
 				
 					<?php echo $strOutput; ?>
+					
+					<a class="entry-terms" href="entry-terms.php">Promotion Terms &amp; Conditions</a>
 				
 				</div>
 			
 				
 				
 				
-				<a href="entryform_hilux.php">
-					<div class="win-hilux vehicle-choice gradient alternative">
+				<a class="or-hilux" href="entryform_hilux.php">
+					<div class="win-hilux vehicle-choice alternative">
 						<span class="or">or</span>
 					
 						<h2>
@@ -140,12 +152,16 @@ include 'includes/form.php';
 					
 						<img class="vehicle" src="img/hilux.png" alt="">
 					</div>
+					
+					<!--[if lte IE 8]>
+						<img src="img/ie_or-hilux.png" />
+					<![endif]-->
 				</a>
 				
 				
 			
 				<nav class="page-nav">
-					<a class="link-more_toyota" href="http://www.toyota.co.uk/cgi-bin/toyota/bv/frame_start.jsp?id=CC2-PROACE-landing" onClick="trackOutboundLink(this, 'Outbound Links', 'http://www.toyota.co.uk/cgi-bin/toyota/bv/frame_start.jsp?id=CC2-PROACE-landing'); return false;">MORE ABOUT TOYOTA PROACE</a>
+					<a class="link-more_toyota proace" href="http://www.toyota.co.uk/cgi-bin/toyota/bv/frame_start.jsp?id=CC2-PROACE-landing" onClick="trackOutboundLink(this, 'Outbound Links', 'http://www.toyota.co.uk/cgi-bin/toyota/bv/frame_start.jsp?id=CC2-PROACE-landing'); return false;">MORE ABOUT TOYOTA PROACE</a>
 					
 
 					<a class="link-download" href="files/Henkel - UniBond Trade Catalogue - March 2011.pdf">

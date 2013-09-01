@@ -24,17 +24,12 @@
         <!-- <link rel="stylesheet" href="css/normalize.css"> -->
         <link rel="stylesheet" href="css/main.css">
 		
-
-		
-		<!-- <link href="includes/form_hilux/css/structure.css" rel="stylesheet">
-		<link href="includes/form_hilux/css/form.css" rel="stylesheet"> -->
-		<link rel="stylesheet" href="css/form.css">
-		
 		
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 		
 		<!--[if lte IE 8]>
-			<link rel="stylesheet" href="css/ie8.css">
+			<link rel="stylesheet" href="css/ie8_v2.css">
+			<script src="libraries/respond.min.js"></script>
 		 <![endif]-->
 			
 			
@@ -61,11 +56,13 @@
         <![endif]-->
 
         
-		<header>
-			<a href="index.php"><h1>Unibond</h1></a>
-		</header>
-		
 		<div id="wrap">
+		
+			<header class="main-header">
+				<a href="index.php"><h1>Unibond</h1></a>
+			</header>
+
+
 			<section class="gradient">
 			
 				<div class="text-container">

@@ -4,6 +4,9 @@
 
 .validform_wrapper {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#a5a3a3',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+	
+	
+	margin-top: 0!important;
 }
 
 a.link-more_toyota {
@@ -33,3 +36,34 @@ a .vehicle-choice:hover {
 .alternative .or {
 	right: 200px;
 }
+
+@media only screen and (min-width: 768px) {
+	.entry-form .vehicle-choice.alternative {
+		margin-top: 0px;
+	}
+}
+
+@media only screen and (min-width: 1358px) {
+	
+	section {
+		width: 1300px;
+	}
+}
+
+
+.thankyou .rotate,
+.thankyou .thankyou-header {
+	margin-top: 100px!important;
+}
+
+.thankyou .toyota-logo {
+    width: 48px!important;
+}
+
+
+.thankyou .win-hilux {
+	margin-left: 10px!important;
+}
+
+
+

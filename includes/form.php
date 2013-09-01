@@ -1,9 +1,9 @@
 <?php
 require_once("libraries/ValidForm/class.validform.php");
 
-$objForm = new ValidForm("contactForm", "Please complete all fields.");
+$objForm = new ValidForm("contactForm", "Required fields*");
 //*** A 'name' field, field type is string.
-$objForm->addField("full_name", "Full name", VFORM_STRING, 
+$objForm->addField("full_name", "Full name*", VFORM_STRING, 
     array(
         "maxLength" => 60, 
         "required" => TRUE
@@ -19,7 +19,7 @@ $objForm->addField("full_name", "Full name", VFORM_STRING,
 $objForm->addField("your_trade", "Your trade", VFORM_STRING, 
     array(
         "maxLength" => 255, 
-        "required" => TRUE
+        // "required" => TRUE
     ), 
     array(
         "maxLength" => "Your input is too long. A maximum of %s characters is OK.", 
@@ -32,7 +32,7 @@ $objForm->addField("your_trade", "Your trade", VFORM_STRING,
 $objForm->addField("business_name", "Business name", VFORM_STRING, 
     array(
         "maxLength" => 255, 
-        "required" => TRUE
+        // "required" => TRUE
     ), 
     array(
         "maxLength" => "Your input is too long. A maximum of %s characters is OK.", 
@@ -45,7 +45,7 @@ $objForm->addField("business_name", "Business name", VFORM_STRING,
 $objForm->addField("business_type", "Business type (e.g. builder, plumber)", VFORM_STRING, 
     array(
         "maxLength" => 255, 
-        "required" => TRUE
+        // "required" => TRUE
     ), 
     array(
         "maxLength" => "Your input is too long. A maximum of %s characters is OK.", 
@@ -58,7 +58,7 @@ $objForm->addField("business_type", "Business type (e.g. builder, plumber)", VFO
 $objForm->addField("email", "Email address", VFORM_EMAIL, 
     array(
         "maxLength" => 255, 
-        "required" => TRUE
+        // "required" => TRUE
     ), 
     array(
         "maxLength" => "Your email too long. A maximum of %s characters is OK.", 
@@ -68,7 +68,7 @@ $objForm->addField("email", "Email address", VFORM_EMAIL,
 );
 
 //*** A numeric field, field type is email.
-$objForm->addField("mobile", "Mobile", VFORM_CUSTOM, 
+$objForm->addField("mobile", "Telephone / Mobile*", VFORM_CUSTOM, 
     array(
         "maxLength" => 30, 
         "required" => TRUE,
@@ -84,7 +84,7 @@ $objForm->addField("mobile", "Mobile", VFORM_CUSTOM,
 );
 
 //*** A 'name' field, field type is string.
-$objForm->addField("house_name_number", "House name / number", VFORM_STRING, 
+$objForm->addField("house_name_number", "House name / number*", VFORM_STRING, 
     array(
         "maxLength" => 255, 
         "required" => TRUE
@@ -97,7 +97,7 @@ $objForm->addField("house_name_number", "House name / number", VFORM_STRING,
 );
 
 //*** A 'name' field, field type is string.
-$objForm->addField("street", "Street", VFORM_STRING, 
+$objForm->addField("street", "Street*", VFORM_STRING, 
     array(
         "maxLength" => 255, 
         "required" => TRUE
@@ -123,7 +123,7 @@ $objForm->addField("street_cont", "Street (cont.)", VFORM_STRING,
 );
 
 //*** A 'name' field, field type is string.
-$objForm->addField("town", "Town", VFORM_STRING, 
+$objForm->addField("town", "Town*", VFORM_STRING, 
     array(
         "maxLength" => 255, 
         "required" => TRUE
@@ -139,7 +139,7 @@ $objForm->addField("town", "Town", VFORM_STRING,
 $objForm->addField("county", "County", VFORM_STRING, 
     array(
         "maxLength" => 255, 
-        "required" => TRUE
+        // "required" => TRUE
     ), 
     array(
         "maxLength" => "Your input is too long. A maximum of %s characters is OK.", 
@@ -149,7 +149,7 @@ $objForm->addField("county", "County", VFORM_STRING,
 );
 
 //*** A 'name' field, field type is string.
-$objForm->addField("postcode", "Postcode", VFORM_STRING, 
+$objForm->addField("postcode", "Postcode*", VFORM_STRING, 
     array(
         "maxLength" => 8, 
         "required" => TRUE
@@ -162,7 +162,7 @@ $objForm->addField("postcode", "Postcode", VFORM_STRING,
 );
 
 //*** A 'name' field, field type is string.
-$objForm->addField("screwfix_invoice_number", "Screwfix invoice number", VFORM_STRING, 
+$objForm->addField("screwfix_invoice_number", "Screwfix invoice number*", VFORM_STRING, 
     array(
         "maxLength" => 50, 
         "required" => TRUE
@@ -178,7 +178,7 @@ $objForm->addField("screwfix_invoice_number", "Screwfix invoice number", VFORM_S
 $objForm->addField("screwfix_store", "Screwfix store", VFORM_STRING, 
     array(
         "maxLength" => 50, 
-        "required" => TRUE
+        // "required" => TRUE
     ), 
     array(
         "maxLength" => "Your store name is too long. A maximum of %s characters is OK.", 
@@ -224,7 +224,7 @@ $objCheckboxes = $objForm->addField("further_info", "", VFORM_CHECK_LIST,
 //*** Setting the main alert.
 $objForm->setMainAlert("One or more errors occurred. Check the marked fields and try again.");
 //*** As this method already states, it sets the submit button's label.
-$objForm->setSubmitLabel("Send");
+$objForm->setSubmitLabel("Submit");
 
 // $strOutput = $objForm->toHtml();
 
@@ -306,7 +306,7 @@ if($further_info != 'No'){
 
 	$result = mysql_query($addRecord);	//sql query executes
 	//*** Set the output to a friendly thank you note.
-	header("Location: thankyou.php",303);
+	header("Location: thankyou.php?carType=$formtype",303);
 	exit();
 	}
 }

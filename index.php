@@ -28,9 +28,13 @@
 		
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 		
+		<!--[if lte IE 7]>
+			
+		<![endif]-->
+		
 		<!--[if lte IE 8]>
-			<link rel="stylesheet" href="css/ie8.css">
-			<script src="libraries/respond.min.js"></script>
+			<link rel="stylesheet" href="css/ie8_v2.css">
+
 		<![endif]-->
 
 			
@@ -63,15 +67,30 @@
         <![endif]-->
 
         
-		<header>
-			<a href="index.php"><h1>Unibond</h1></a>
-		</header>
+		
 		
 		<div id="wrap">
+			
+			<header class="main-header">
+				<a href="index.php"><h1>Unibond</h1></a>
+			</header>
+			
+	        <!--[if lte IE 8]>
+	            <div class="ie7-main">
+					<img src="img/ie7_landing.png" usemap="#Map" />
+					<map name="Map">
+	                      <area shape="poly" coords="76,180,387,115,468,566,153,622" href="entryform_proace.php">
+	                      <area shape="poly" coords="419,109,751,49,832,500,501,557" href="entryform_hilux.php">
+	                      <area shape="rect" coords="711,563,894,628" href="http://www.screwfix.com/search.do?fh_search=unibond+loctite+nitromors+solvite&fh_start_index=0&fh_sort_by=&fh_view_size=100&fhSearchParams=&customPrice=&priceFrom=&priceTo=&priceFilterOn=" onClick="trackOutboundLink(this, 'Outbound Links', 'http://www.screwfix.com/search.do?fh_search=unibond+loctite+nitromors+solvite&fh_start_index=0&fh_sort_by=&fh_view_size=100&fhSearchParams=&customPrice=&priceFrom=&priceTo=&priceFilterOn=">
+	                      <area shape="rect" coords="430,699,502,726" href="http://www.screwfix.com/search.do?fh_search=unibond+loctite+nitromors+solvite&fh_start_index=0&fh_sort_by=&fh_view_size=100&fhSearchParams=&customPrice=&priceFrom=&priceTo=&priceFilterOn=" onClick="trackOutboundLink(this, 'Outbound Links', 'http://www.screwfix.com/search.do?fh_search=unibond+loctite+nitromors+solvite&fh_start_index=0&fh_sort_by=&fh_view_size=100&fhSearchParams=&customPrice=&priceFrom=&priceTo=&priceFilterOn='); return false;">
+	                  </map>
+				</div>
+	        <![endif]-->
+			
 			<section class="gradient">
 			
 				<div class="rotate">
-					<a href="entryform_proace.php">
+					<a class="proace-link" href="entryform_proace.php">
 						<div class="win-proace vehicle-choice gradient">
 							<h2>
 								<span class="its">It's</span> 
@@ -89,7 +108,7 @@
 			
 					
 			
-					<a href="entryform_hilux.php">
+					<a class="hilux-link" href="entryform_hilux.php">
 						<div class="win-hilux vehicle-choice gradient">
 							<h2>
 								<span class="win">Win</span> 

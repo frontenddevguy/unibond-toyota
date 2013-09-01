@@ -295,14 +295,15 @@ textarea.vf__text {
 div.vf__navigation a.vf__button,
 div.vf__navigation input.vf__button {
 	/*float: right;*/
-	width: auto;
-	border: 1px solid #ccc;
-	padding: 3px 6px;
+	/*width: auto;*/
+	border: none;
+	/*padding: 3px 6px;*/
 	font: normal 16px Arial, Helvetica, sans-serif;
 	color: #000;
 	cursor: pointer;
-	background-color: #efefef;
+	/*background-color: #efefef;*/
 	text-decoration: none;
+	border-radius: 0;
 }
 
 a.vf__previous,

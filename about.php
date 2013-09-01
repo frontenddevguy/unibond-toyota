@@ -28,8 +28,7 @@
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 		
 		<!--[if lte IE 8]>
-			<link rel="stylesheet" href="css/ie8.css">
-			<script src="libraries/respond.min.js"></script>
+			<link rel="stylesheet" href="css/ie8_v2.css">
 		<![endif]-->
 
 			
@@ -63,11 +62,14 @@
         <![endif]-->
 
         
-		<header>
-			<a href="index.php"><h1>Unibond</h1></a>
-		</header>
+		
 		
 		<div id="wrap">
+			
+			<header class="main-header">
+				<a href="index.php"><h1>Unibond</h1></a>
+			</header>
+			
 			<section class="">
 				
 				<div class="about-container">

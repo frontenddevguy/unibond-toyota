@@ -100,6 +100,7 @@ html, body {height: 100%;}
 #wrap {
 	float: left;
 	min-height: 100%;
+	/*height: calc(100% - 99px);*/
 	width: 100%;
 	
 	-webkit-border-top-left-radius: 67px;
@@ -170,12 +171,12 @@ a {
 .page-nav {
 	clear: both;
 	padding-left: 5%;
-	margin: 60px 70px 0 0;
+	margin: 40px 70px 0 0;
 	width: 70%;
 }
 
 .landing-page .page-nav {
-	margin: 40px 0 40px 0;
+	margin: 20px 0 40px 0;
 }
 
 .landing-page h4 {
@@ -328,25 +329,33 @@ a.link-screwfix .icon {
 	top: 5px;
 }
 
+header.main-header {
+	/*height: 99px;*/
+	background: url('../img/bg_rounded-corner.png') no-repeat left 98px;
+	height: 159px;
+}
 
-header a {
-	background: url('../img/logo_unibond.gif') no-repeat;
+header.main-header a {
+	background: #fff url('../img/logo_unibond.gif') no-repeat 20px;
 	display: block;
 	height: 59px;
-	margin: 20px;
-	width: 160px;
+	padding: 20px;
+	/*width: 160px;*/
 }
 
 h1 {
+	font-size: 0;
 	line-height: 0;
 	text-indent: -9999px;
 }
 
 section {
 	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
-	float: left;
+	/*float: left;*/
 	text-transform: uppercase;
-	width: 100%;
+	/*width: 100%;*/
+	
+	margin: 0 auto;
 }
 
 
@@ -410,8 +419,14 @@ a .vehicle-choice:hover {
 	font-family: "Arial Narrow", Arial, sans-serif;
 	font-weight: bold;
 	list-style: none;
+	color: #00549d;
+	padding: 200px 0 0 20px;
 }
 
+.win-hilux.vehicle-choice ul,
+.win-hilux .vehicle-name {
+	color: #ec1c24;
+}
 
 .win-hilux .toyota-logo {
 	position: absolute;
@@ -480,25 +495,36 @@ section h4 {
 	color: #fff;
 	float: left;
 	font-family: Arial, Helvetica, sans-serif;
-	margin: 40px;
+	margin: 20px 40px;
 	text-transform: none;
 }
+
+
 
 .entry-info p,
 .entry-info ul {
 	display: inline-block;
-	line-height: 20px;
 	margin: 0;
 }
 
+.entry-info p,
+.entry-info li {
+	line-height: 27px;
+}
+
+.entry-info p {
+	float: left;
+	padding-top: 3px;
+}
+
 .entry-info ul {
-	
+	padding-left: 26px;
 }
 
 .entry-info li {
 	float: left;
 	list-style: outside;
-	padding: 0 20px 5px 0;
+	padding: 3px 20px 3px 0;
 }
 
 .entry-info a {
@@ -526,11 +552,14 @@ section h4 {
 
 .entry-form .alternative {
 	margin: 20px;
-	padding-bottom: 184px;
+	/*padding-bottom: 184px;*/
+	padding-bottom: 150px;
+	border-top-left-radius: 40px;
 }
 
 .entry-form .alternative img {
-	padding: 20px 0;
+	/*padding: 20px 0;*/
+	padding: 0;
 }
 
 .alternative h2 {
@@ -563,8 +592,10 @@ section h4 {
 	width: 100%;
 }
 
-.entry-form .win-proace .vehicle {
-	bottom: 24px;
+.entry-form .win-proace .vehicle,
+.entry-form .win-hilux .vehicle {
+	/*bottom: 24px;*/
+	bottom: 155px;
 }
 
 .alternative img.vehicle {
@@ -608,9 +639,10 @@ section h4 {
 	-o-box-shadow:rgba(0,0,0,0.2) 0 0 5px;
 	box-shadow:rgba(0,0,0,0.2) 0 0 5px;
 	
-	-webkit-border-top-left-radius: 30px;
-	-moz-border-radius-topleft: 30px;
-	border-top-left-radius: 30px;
+	-webkit-border-top-left-radius: 40px;
+	-moz-border-radius-topleft: 40px;
+	border-top-left-radius: 40px;
+	
 	background: #ffffff; /* Old browsers */
 
 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -646,6 +678,10 @@ section h4 {
     text-transform: uppercase;
 }
 
+.validform_wrapper.proace h2 {
+	color: #00549d;
+}
+
 
 .validform_wrapper h3 {
 	color: #000;
@@ -656,12 +692,30 @@ section h4 {
 	text-shadow: none;
 }
 
+.validform_wrapper a.entry-terms {
+	color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+
 
 .vf__description p {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 13px;
 	margin: 0 0 20px 0;
 }
+
+.entry-form .vf__button {
+	background: url('../img/submit_btn.png') no-repeat 0 0;
+	font-size: 0;
+	height: 22px;
+	line-height: 0;
+	text-indent: -9999px;
+	width: 63px;
+}
+
+
 
 .validform_wrapper input {
 	-webkit-border-radius: 7px;
@@ -676,7 +730,7 @@ section h4 {
 	
 	padding: 2px 0;
 	
-	behavior: url(includes/PIE-1.0.0/PIE.htc);
+	/*behavior: url(includes/PIE-1.0.0/PIE.htc);*/
 }
 
 .validform_wrapper label {
@@ -770,6 +824,14 @@ fieldset div {
 		width: 40px;
 	}
 	
+	.page-nav {
+		height: 380px;
+	}
+	
+	.landing-page .page-nav {
+		height: 150px;
+	}
+	
 
 	
 	/* About */
@@ -833,6 +895,14 @@ fieldset div {
 		display: none;
 	}
 	
+	.thankyou .vehicle-choice .vehicle {
+		bottom: 36px;
+	}
+	
+	.thankyou .vehicle-name {
+		text-shadow: -1px 2px 1px #FFFFFF;
+	}
+	
 	.thankyou-header {
 		font-size: 32px;
 	  	line-height: 44px;
@@ -840,8 +910,15 @@ fieldset div {
 		padding: 0 30px;
 	  	text-align: center;
 		text-shadow: 4px 4px 0 #221F1F;
-		
-		behavior: url(includes/PIE-1.0.0/PIE.htc);
+	}
+	
+	.thankyou-header .choice-message {
+		display: block;
+		font-size: 24px;
+		line-height: 32px;
+		margin: 0 auto;
+		max-width: 300px;
+		padding: 30px 20px 0 20px;
 	}
 	
 	.closed .rotate {
@@ -856,9 +933,9 @@ fieldset div {
 	
 	/* Thank You */
 	
-	.thankyou .win-hilux img {
+/*	.thankyou .win-hilux img {
 		margin-top: 15px;
-	}
+	}*/
 	
 	/* T & C etc */
 
@@ -890,7 +967,7 @@ fieldset div {
 	}
 
 	.text-container {
-		padding: 40px;
+		padding: 40px 40px 100px 40px;
 	}
 
 	.text-container strong {
@@ -954,7 +1031,7 @@ fieldset div {
 
 @media only screen and (min-width: 480px) {
 	.rotate {
-		margin-top: 40px;
+		/*margin-top: 40px;*/
 	}
 	
 	.vehicle-choice .vehicle {
@@ -1087,7 +1164,7 @@ fieldset div {
 @media only screen and (min-width: 768px) {
 	.rotate {
 		float: left;
-		margin-top: 46px;
+		margin-top: -5px;
 	
 	    -webkit-transform: rotate(350deg);  /* Chrome, Safari 3.1+ */
 	       -moz-transform: rotate(350deg);  /* Firefox 3.5-15 */
@@ -1161,7 +1238,7 @@ fieldset div {
 	section h4 {
 		float: left;
 	  	font-size: 32px;
-	  	margin: 0 0 0 80px;
+	  	margin: 0 0 0 50px;
 	  	text-shadow: 4px 4px 0 #221F1F;
 		
 		behavior: url(includes/PIE-1.0.0/PIE.htc);
@@ -1172,12 +1249,22 @@ fieldset div {
 	}
 
 	.entry-info {
-		font-size: 16px;
+		font-size: 20px;
 		margin-left: 80px;
 	}
 	
 	.page-nav {
 		width: 95%;
+		height: 210px;
+		margin-top: 80px;
+	}
+	
+	.landing-page .page-nav {
+		height: 150px;
+	}
+	
+	.landing-page .page-nav a {
+		width: 150px;
 	}
 	
 	.page-nav a {
@@ -1197,6 +1284,10 @@ fieldset div {
 		float: right;	
 		padding: 140px 30px 0 30px;
 		width: 280px;
+	}
+	
+	.about-container {
+		width: 760px;
 	}
 	
 	.about-text {
@@ -1284,6 +1375,7 @@ fieldset div {
 }
 
 @media only screen and (min-width: 1024px) {	
+	
 	.vehicle-choice {
 		height: 540px;
 		width: 337px;
@@ -1346,7 +1438,7 @@ fieldset div {
 	.entry-form .vehicle-choice.alternative {
 		clear: none;
 		height: auto;
-		margin: 500px 0 0 10px;
+		margin: 540px 0 0 10px;
 	}
 		
 	
@@ -1355,7 +1447,7 @@ fieldset div {
 	
 	
 	.thankyou .rotate {
-		margin-top: 172px;
+		margin-top: 100px;
 	}
 	
 	.thankyou .vehicle-choice {
@@ -1365,7 +1457,7 @@ fieldset div {
 	.thankyou-header {
 		font-size: 75px;
 		line-height: 82px;
-		margin: 146px 0 0 90px;
+		margin: 50px 0 0 90px;
 		width: 30%;
 	}
 
@@ -1380,6 +1472,11 @@ fieldset div {
 
 
 @media only screen and (min-width: 1170px) {
+	
+	.landing-page section {
+		width: 1000px;
+	}
+	
 	/* Entry Form */
 	
 	.entry-form .rotate {
@@ -1388,6 +1485,10 @@ fieldset div {
 	
 	.entry-form .rotate .vehicle-choice {
 		height: 430px;
+		
+		-webkit-border-top-left-radius: 40px;
+		-moz-border-radius-topleft: 40px;
+		border-top-left-radius: 40px;
 	}
 	
 	.entry-form .rotate .vehicle-choice h2 .win {
@@ -1407,6 +1508,14 @@ fieldset div {
 
 @media only screen and (min-width: 1358px) {
 	
+	.rotate {
+		margin-top: -23px;
+	}
+	
+	section {
+		width: 1200px;
+	}
+	
 	/* Entry Form */	
 	
 	.entry-form .rotate {
@@ -1419,7 +1528,7 @@ fieldset div {
 	
 	.entry-form .rotate .vehicle-choice {
 		height: auto;
-		padding-bottom: 200px;
+		/*padding-bottom: 200px;*/
 		width: 337px;
 	}
 }	
@@ -1498,9 +1607,6 @@ footer h2 {
 .thankyou h2 .vehicle-name {
 	font-size: 22px;
 	margin-top: -18px;
-	text-shadow: -3px 4px 0 #FFFFFF;
-	
-	behavior: url(includes/PIE-1.0.0/PIE.htc);
 }
 
 .thankyou .win-hilux {

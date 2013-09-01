@@ -61,11 +61,12 @@
         <![endif]-->
 
         
-		<header>
-			<h1>Unibond</h1>
-		</header>
-		
-		<div id="wrap">
+			<div id="wrap">
+			
+				<header class="main-header">
+					<a href="index.php"><h1>Unibond</h1></a>
+				</header>
+
 			<section class="gradient">
 			
 				<div class="rotate">
